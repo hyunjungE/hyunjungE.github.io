@@ -1,5 +1,47 @@
-@import url(reset.css);
-@import url(normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
-
-
+@import url(common.css);
+header{
+    position: absolute;
+    z-index:1;
+    left: 0;
+    right: 0;
+    transition:0.3s;
+    list-style: none;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header .main_menu{
+    display: flex;
+}
+header nav > ul{
+    display: flex;
+    gap:40px;
+}
+header nav>ul>li>a{
+    color: var(--white);
+}
+header .main_menu>ul>li ul{
+    position: absolute;
+    top: -999px;
+}
+header .main_menu> ul > li ul li{
+    white-space:nowrap;
+}
+.color1{
+    color: var(--main-cr);
+}
+.color2{
+    color: var(--secondary-cr);
+}
+.full_video{
+    height: 100%;
+    width: 100%;
+}
+.full_video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
