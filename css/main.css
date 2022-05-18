@@ -36,12 +36,72 @@ header .main_menu> ul > li ul li{
 .color2{
     color: var(--secondary-cr);
 }
-.full_video{
-    height: 100%;
-    width: 100%;
+.main_slide{
+    height: 100vh;
+    overflow: hidden;
 }
+.slide_container{
+    transition:left 0.4s ease-out;
+}
+
 .full_video video{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
+    display: flex;
+    z-index:-1;
+}
+.full_video::after video{
+    content:'';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+.main_slide .controls{
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.main_slide .pager{
+    display: flex;
+    gap: 15px;
+}
+.pager a{
+    width: 8px;
+    height: 8px;
+    background: #009297;
+    border-radius:50%;
+    text-indent: -9999em;
+    border:2px solid transparent;
+}
+.pager a:nth-child(1){
+    border:2px solid #009297;
+    background: none;
+}
+.counters{
+    text-align: center;
+}
+.counters .counters_list{
+    display: flex;
+    justify-content: space-between;
+    padding-top:calc(var(--line-height)*2);
+}
+.project_slide .pj_wrapper{
+    position: relative;
+    height: 100vh
+}
+.project_slide ul{
+    display: flex;
+}
+.project_slide ul li{
+    display: flex;
+    white-space: nowrap;
+    position: absolute;
+}
+.project_slide .project h3{
+    padding:var(--line-height);
 }
