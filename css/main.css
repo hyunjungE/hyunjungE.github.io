@@ -2,9 +2,9 @@
 header{
     position: absolute;
     z-index:1;
-    left: 0;
-    right: 0;
-    transition:0.3s;
+    left:0;
+	right:0;
+	top: 0;
     list-style: none;
 }
 header > div{
@@ -12,6 +12,7 @@ header > div{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    transition:left 1s ease-out;
 }
 header nav{
     display: flex;
@@ -20,16 +21,38 @@ header nav > ul{
     display: flex;
     gap:40px;
 }
-header .main_menu>ul>li>a{
+header nav>ul>li>a{
     color: var(--white);
+}
+.main_menu li{
+    position: relative;
 }
 header nav>ul>li ul{
     position: absolute;
-    top: -999px;
+    top: -9999px;
 }
 header .main_menu> ul > li ul li{
     white-space:nowrap;
 }
+header .main_menu>ul>li>a:hover{
+    color: var(--secondary-cr);
+}
+header .main_menu> ul > li::after{
+    content: '';
+}
+header .main_menu>ul>li:hover::after{
+    position: absolute;
+    width: 84px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    background: var(--secondary-cr);
+}
+header .main_menu> ul > li:hover ul{
+    background: var(--white);
+    top:100%;
+ }
 .color1{
     color: var(--main-cr);
 }
@@ -43,7 +66,6 @@ header .main_menu> ul > li ul li{
 .slide_container{
     transition:left 0.4s ease-out;
 }
-
 .full_video video{
     height: 100%;
     width: 100%;
@@ -79,7 +101,7 @@ header .main_menu> ul > li ul li{
     border:2px solid transparent;
 }
 .pager a:nth-child(1){
-    border:2px solid #009297;
+    border:2px solid var(--secondary-cr);
     background: none;
 }
 .counters{
@@ -90,30 +112,118 @@ header .main_menu> ul > li ul li{
     justify-content: space-between;
     padding-top:calc(var(--line-height)*2);
 }
-.project_slide .pj_wrapper{
+.project_slide{
+    padding-top:calc(var(--line-height)*2);
     position: relative;
-    height: 100vh
-}
-.project_slide ul{
-    display: flex;
-}
-.project_slide ul li{
-    display: flex;
-    gap: 100px;
     white-space: nowrap;
 }
-.project_slide .project h3{
-    padding:var(--line-height);
+.project_slide h3{
+    padding-top:var(--line-height);
+}
+.project_slide .arrow{
+    background: url(/image/main/arrow-right-long.png) no-repeat;
+    height: 51px;
+}
+.project_slide .sprite{
+    background: url(/image/sprite.png) no-repeat;
+    height: 51px;
+}
+.project_list h2{
+    text-transform: uppercase;
+}
+.pj_wrapper{
+    position: relative;
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    overflow: hidden;
+}
+.pj_wrapper ul{
+    display: flex;
+}
+.pj_img ul{
+    display: flex;
+    width: 100%;
+}
+.middle_slide{
+    position: relative;
+    height: 100vh;
+}
+.slide_wrapper{
+    overflow: hidden;
+    position: relative;
+}
+.mdslide li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 .mdsldie1{
     background: url(/image/main/banner1.jpg) no-repeat center/cover;
-    height: 505px;
+
 }
 .mdsldie2{
-    background: url(/image/main/banner2.jpg)no-repeat center/cover;
-    height: 505px;
+    background: url(/image/main/banner2.jpg) no-repeat center/cover;
+
 }
 .mdsldie3{
-    background: url(/image/main/banner3.jpg)no-repeat center/cover;
-    height: 505px;
+    background: url(/image/main/banner3.jpg) no-repeat center/cover;
+
+}
+.middle_slide .pj_controls{
+   position: absolute;
+   left: 50%;
+   bottom: 20px;
+   transform:translateX(-50%);
+   display: flex;
+}
+.middle_slide .pj_pager{
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.pj_pager a{
+    width: 8px;
+    height: 8px;
+    background: #009297;
+    border-radius:50%;
+    text-indent: -9999em;
+    border:2px solid transparent;
+}
+.brand_content .container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand_content h2{
+    text-align: center;
+    padding:var(--line-height);
+}
+.brand_content p{
+    text-align: center;
+}
+.side_menu .container{
+    display: flex;
+    justify-content: space-between;
+}
+.main_footer::before{
+    content: '';
+    content: '';
+    clear: both;
+    display: block;
+    border: 1px solid #ebebeb;
+    margin: var(--line-height);
+}
+.main_footer .footer_top .container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.main_footer .footer_top .container .footmenu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
 }
