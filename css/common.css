@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
 
 :root {
-    --font:'Noto Sans', sans-serif,'Noto Sans KR';
+    --font:'Noto Sans', sans-serif;
     --body-fz:1rem;
     --line-height:1.7em;
     --main-cr:#eb683b;

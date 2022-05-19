@@ -13,17 +13,17 @@ header > div{
     align-items: center;
     list-style: none;
 }
-header .main_menu{
+header nav{
     display: flex;
 }
 header nav > ul{
     display: flex;
     gap:40px;
 }
-header nav>ul>li>a{
+header .main_menu>ul>li>a{
     color: var(--white);
 }
-header .main_menu>ul>li ul{
+header nav>ul>li ul{
     position: absolute;
     top: -999px;
 }
@@ -99,9 +99,21 @@ header .main_menu> ul > li ul li{
 }
 .project_slide ul li{
     display: flex;
+    gap: 100px;
     white-space: nowrap;
-    position: absolute;
 }
 .project_slide .project h3{
     padding:var(--line-height);
+}
+.mdsldie1{
+    background: url(/image/main/banner1.jpg) no-repeat center/cover;
+    height: 505px;
+}
+.mdsldie2{
+    background: url(/image/main/banner2.jpg)no-repeat center/cover;
+    height: 505px;
+}
+.mdsldie3{
+    background: url(/image/main/banner3.jpg)no-repeat center/cover;
+    height: 505px;
 }
