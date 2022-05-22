@@ -13,7 +13,7 @@
     <header class="main_header_top">
         <div class="container">
             <h1 class="logo"><a href="#"><img src="/image/logo/logo.png" alt="GS건설로고"></a></h1>
-            <nav class="main_menu">
+            <nav class="main_menu mc">
                 <ul>
                     <li><a href="#" class="sub_tt">회사소개</a>
                         <ul>
@@ -26,7 +26,7 @@
                             <li><a href="">오시는길</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="sub_tt">지속가능경영</a>
+                    <li><a href="#" class="sub_tt">경영영역</a>
                         <ul>
                             <li><a href="">지속가능경영</a></li>
                             <li><a href="">공정거래자율준수</a></li>
@@ -67,22 +67,19 @@
                     <li><a href="sub_story.html" class="sub_tt ttf"><span class="color1">g</span><span class="color2">s</span>story</a>
                         <ul>
                             <li><img src="/image/main/mainmenu-img1.png" alt=""></li>
-                        </ul>
-                    </li>
-                    <li><a href="sub_recruit.html" class="sub_tt">인재채용</a>
-                        <ul>
                             <li><img src="/image/main/mainmenu-img2.png" alt=""></li>
                         </ul>
                     </li>
+                    <li><a href="sub_recruit.html" class="sub_tt">인재채용</a></li>
                 </ul>
             </nav>
-            <nav class="service_menu">
-                <ul>
+            <div class="mc">
+                <ul class="service_menu">
                     <li><a href="#" class="sub_tt">고객센터</a></li>
                     <li><a href="#" class="sub_tt">|</a></li>
                     <li><a href="#" class="sub_tt ttf color1">eng</a></li>
                 </ul>
-            </nav>
+            </div>
             </div>
 
     </header>
@@ -128,7 +125,7 @@
         <section class="project_slide ">
             <div class="pj_wrapper container">
                 <div class="project_list">
-                    <h2 class="main_tt">gs 프로젝트</h2>
+                    <h2 class="main_tt ttf">gs 프로젝트</h2>
                     <ul>
                         <li class="project1">
                             <h3 class="sub_tt">플랜트 사업</h3>
@@ -185,31 +182,33 @@
         <section class="brand_content">
             <div class="container">
             <h2 class="main_tt">경영방침</h2>
-                <ul>
-                    <li>
+                <div class="bc_list">
+                    <div>
                         <img src="image/main/safety.png" alt="">
                         <p class="sub_tt">프로 직업정신</p>
                         <p class="content_tt">(Professionalism)</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <img src="image/main/justice.png" alt="">
                         <p class="sub_tt">공정인사</p>
                         <p class="content_tt">(hands-on)</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <img src="image/main/solve.png" alt="">
                         <p class="sub_tt">문제해결</p>
                         <p class="content_tt">(speak-up)</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="side_menu">
             <div class="container">
                 <div class="story_list">
-                    <h2 class="main_tt">story</h2>
-                    <span class="material-symbols-outlined">add</span>
-                    <ul class="news_list">
+                    <div class="sb_title">
+                        <h2 class="main_tt">story</h2>
+                        <span class="material-symbols-outlined main_tt">add</span>
+                    </div>
+                    <ul class="news">
                         <li><a href="sub_story.html" class="content_sub_tt">GS건설 자회사 엘리먼츠 유럽, 영국 런던에 고층 모듈러 호텔 수주</a></li>
                         <li><a href="sub_story.html" class="content_sub_tt">GS건설, 독일 ‘iF 디자인 어워드 2022' 에서 2개 부문 수상</a></li>
                         <li><a href="sub_story.html" class="content_sub_tt">GS건설, 세계 최고 바이오디젤 생산설비 표준 모듈화 나선다.</a></li>
@@ -217,8 +216,10 @@
                     </ul>
                 </div>
                 <div class="recruit_list">
-                    <h2 class="main_tt">recruit</h2>
-                    <span class="material-symbols-outlined">add</span>
+                    <div class="sb_title">
+                        <h2 class="main_tt">recruit</h2>
+                        <span class="material-symbols-outlined main_tt">add</span>
+                    </div>
                     <ul class="recruit">
                         <li><a href="sub_recruit.html" class="content_sub_tt">[2022년] GS건설 엘리베이터연구소 베트남 엔지니어 모집</a></li>
                         <li><a href="sub_recruit.html" class="content_sub_tt">[2022년] 케이에코새먼어업회사(GS건설 자회사) 정규직 경력사원 모집</a></li>
@@ -227,14 +228,24 @@
                     </ul>
                 </div>
                 <div class="stock_day">
-                    <h2 class="main_tt">stock</h2>
-                    <span class="material-symbols-outlined">add</span>
-                    <p class="content_sub_tt">2022.05.03 기준</p>
-                    <strong>41,900</strong>
-                    <p class="content_sub_tt">전일 대비</p> 
-                    <strong>400</strong> 
-                    <span class="material-symbols-outlined">arrow_drop_down</span>
-                    <p class="content_sub_tt">등락률</p><p> 0.95%<span class="material-symbols-outlined">arrow_drop_down</span></p>
+                    <div class="sb_title">
+                        <h2 class="main_tt">stock</h2>
+                        <span class="material-symbols-outlined main_tt">add</span>
+                    </div>
+                    <div class="stock_img">
+                        <p class="content_tt">2022.05.03 기준</p> 
+                        <p class="main_tt">41,900</p>
+                        <div>
+                            <p class="content_tt">전일 대비</p> 
+                            <p class="content_tt">400</p> 
+                            <span class="material-symbols-outlined content_tt">arrow_drop_down</span>
+                        </div>
+                        <div>
+                            <p class="content_tt">등락률</p>
+                            <p class="content_tt">0.95%</p>
+                            <span class="material-symbols-outlined content_tt">arrow_drop_down</span>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </section>
@@ -244,15 +255,20 @@
             <div class="container">
                 <p class="footer_logo"><a href=""><img src="/image/logo/logo_hover.png" alt="GS건설푸터로고"></a></p>
                 <ul class="footmenu">
-                    <li class="ft_menu1"><a href="#" class="content_sub_tt">사이버신문고</a></li>
-                    <li class="ft_menu2"><a href="#" class="content_sub_tt">개인정보처리방침</a></li>
-                    <li class="ft_menu3"><a href="#" class="content_sub_tt">이메일주소무단수집거부</a></li>
-                    <li class="ft_menu4"><a href="#" class="content_sub_tt">고객센터</a></li>
-                    <li class="ft_menu5"><a href="#" class="content_sub_tt">사이트맵</a></li>
-                    <li class="ft_menu6"><a href="#" class="content_sub_tt">본사(그랑서울) 방문 예약</a></li>
-                    <li class="ft_menu7"><a href="#" ><img src="/image/main/WA_mark.png" alt="wa품질인증마크"></a></li>
+                    <li><a href="#" class="content_sub_tt">사이버신문고</a></li>
+                    <li><a href="#" class="content_sub_tt">|</a></li>
+                    <li><a href="#" class="content_sub_tt">개인정보처리방침</a></li>
+                    <li><a href="#" class="content_sub_tt">|</a></li>
+                    <li><a href="#" class="content_sub_tt">이메일주소무단수집거부</a></li>
+                    <li><a href="#" class="content_sub_tt">|</a></li>
+                    <li><a href="#" class="content_sub_tt">고객센터</a></li>
+                    <li><a href="#" class="content_sub_tt">|</a></li>
+                    <li><a href="#" class="content_sub_tt">사이트맵</a></li>
+                    <li><a href="#" class="content_sub_tt">|</a></li>
+                    <li><a href="#" class="content_sub_tt">본사(그랑서울) 방문 예약</a></li>
                 </ul>
-                <div>
+                <div class="footer_md">
+                    <img src="/image/main/WA_mark.png" alt="wa품질인증마크">
                     <select name="familysite" id="familysite" >
                         <option value="" class="content_sub_tt">familysite</option>
                         <option value="" class="content_sub_tt">Brand</option>

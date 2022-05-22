@@ -35,6 +35,7 @@ body{
 }
 .main_tt{
     font-size: 38px;
+    font-weight: bold;
 }
 .sub_tt{
     font-size: 20px;
@@ -46,4 +47,10 @@ body{
 .container{
     width: var(--con-width);
     margin:0 auto;
+}
+.content_sub_tt{
+    font-size: var(--body-fz);
+}
+.white_cr{
+    color: var(--white);
 }

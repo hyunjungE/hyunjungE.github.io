@@ -1,5 +1,5 @@
 @import url(common.css);
-header{
+.main_header_top{
     position: absolute;
     z-index:1;
     left:0;
@@ -19,28 +19,34 @@ header nav{
 }
 header nav > ul{
     display: flex;
-    gap:40px;
+    gap:55px;
+    justify-content: space-between;
 }
-header nav>ul>li>a{
+header .service_menu{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+}
+header .mc>ul>li>a{
     color: var(--white);
 }
-.main_menu li{
+header nav li{
     position: relative;
 }
 header nav>ul>li ul{
     position: absolute;
     top: -9999px;
 }
-header .main_menu> ul > li ul li{
+header nav> ul > li ul li{
     white-space:nowrap;
 }
-header .main_menu>ul>li>a:hover{
+header nav>ul>li>a:hover{
     color: var(--secondary-cr);
 }
-header .main_menu> ul > li::after{
+header nav> ul > li::after{
     content: '';
 }
-header .main_menu>ul>li:hover::after{
+header nav>ul>li:hover::after{
     position: absolute;
     width: 84px;
     height: 7px;
@@ -49,11 +55,11 @@ header .main_menu>ul>li:hover::after{
     transform:translateX(-50%);
     background: var(--secondary-cr);
 }
-header .main_menu> ul > li:hover ul{
+header nav> ul > li:hover ul{
     background: var(--white);
     top:100%;
  }
-.color1{
+.mc .color1,.color1{
     color: var(--main-cr);
 }
 .color2{
@@ -128,9 +134,6 @@ header .main_menu> ul > li:hover ul{
     background: url(/image/sprite.png) no-repeat;
     height: 51px;
 }
-.project_list h2{
-    text-transform: uppercase;
-}
 .pj_wrapper{
     position: relative;
     display: flex;
@@ -182,7 +185,6 @@ header .main_menu> ul > li:hover ul{
     justify-content: space-between;
     gap: 150px;
 }
-
 .pj_pager a{
     width: 8px;
     height: 8px;
@@ -191,7 +193,7 @@ header .main_menu> ul > li:hover ul{
     text-indent: -9999em;
     border:2px solid transparent;
 }
-.brand_content .container ul{
+.brand_content .container .bc_list{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,9 +205,69 @@ header .main_menu> ul > li:hover ul{
 .brand_content p{
     text-align: center;
 }
+.brand_content .container .bc_list div img{
+    transition: all 0.2s linear;
+}
+.brand_content .container .bc_list div:hover img{
+    transform: scale(1.1);
+}
+.brand_content .container .bc_list div{
+    width:350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.brand_content .container .bc_list div > p{
+    overflow: inherit 
+}
+
+.side_menu{
+    padding-top:calc(var(--line-height)*2); 
+}
 .side_menu .container{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
+}
+.side_menu .container .sb_title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    padding-bottom: var(--line-height);
+}
+.side_menu .container .sb_title h2{
+    position: relative;
+}
+.side_menu .material-symbols-outlined{
+    padding: 13.2px 0;
+}
+.side_menu .material-symbols-outlined:hover{
+    color: var(--secondary-cr);
+}
+
+.side_menu .container .news li,.side_menu .container .recruit li{
+    border-bottom: 1px solid #000;
+    padding: var(--line-height) 0;
+}
+.side_menu .container .news li a:hover, .side_menu .container .recruit li a:hover{
+    font-weight: bold;
+}
+
+.side_menu .stock_img{
+    width: 478px;
+    height: 323px;
+    background: url(/image/main/stock_bg.png) no-repeat;
+}
+.stock_day .stock_img div{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.stock_day .stock_img div .material-symbols-outlined{
+    position: absolute;
+    top: -10px;
+    left: 120px;
+    color: var(--secondary-cr);
 }
 .main_footer::before{
     content: '';
@@ -218,12 +280,67 @@ header .main_menu> ul > li:hover ul{
 .main_footer .footer_top .container{
     display: flex;
     align-items: center;
-    gap: 15px;
     justify-content: space-between;
+    gap: 76px;
 }
 .main_footer .footer_top .container .footmenu{
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
+}
+.main_footer .footer_bottom .container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.main_footer .footer_md{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/*-------------------*/
+.story_banner{
+    background: url(../image/story/story_Banner.jpg) no-repeat;
+    height: 670px;
+}
+.sub_story .sub_banner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%); 
+    text-align: center;
+}
+.sub_story .sub_banner p{
+    padding-top: var(--line-height);
+}
+.news h2{
+    text-align: center;
+    padding: var(--line-height);
+}
+.news h3{
+    padding: var(--line-height);
+}
+.news .news_list ul li{
+    display: flex;
+    gap: 150px;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--line-height);
+}
+.news .news_list ul .list2,.news .news_list ul .list4{
+    flex-direction:row-reverse;
+}
+.modal_video h2{
+    text-align: center;
+    padding: var(--line-height);
+}
+.modal_video .video_list ul{
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    gap: 28.6px;
+}
+.video_wrapper{
+    display: none;
 }
