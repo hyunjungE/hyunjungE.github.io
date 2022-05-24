@@ -54,3 +54,112 @@ body{
 .white_cr{
     color: var(--white);
 }
+.main_header_top{
+    position: absolute;
+    z-index:1;
+    left:0;
+	right:0;
+	top: 0;
+    list-style: none;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    transition:left 1s ease-out;
+}
+header nav{
+    display: flex;
+}
+header nav > ul{
+    display: flex;
+    gap:55px;
+    justify-content: space-between;
+}
+header .service_menu{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+}
+header .mc>ul>li>a{
+    color: var(--white);
+}
+header nav li{
+    position: relative;
+}
+header nav>ul>li ul{
+    position: absolute;
+    top: -9999px;
+}
+header nav> ul > li ul li{
+    white-space:nowrap;
+}
+header nav>ul>li>a:hover{
+    color: var(--secondary-cr);
+}
+header nav> ul > li::after{
+    content: '';
+}
+header nav>ul>li:hover::after{
+    position: absolute;
+    width: 84px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    background: var(--secondary-cr);
+}
+header nav> ul > li:hover ul{
+    background: var(--white);
+    top:100%;
+ }
+.mc .color1,.color1{
+    color: var(--main-cr);
+}
+.main_footer::before{
+    content: '';
+    clear: both;
+    display: block;
+    border: 1px solid #ebebeb;
+    margin: var(--line-height);
+}
+.main_footer .footer_top .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 76px;
+}
+.main_footer .footer_top .container .footmenu{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.main_footer .footer_bottom .container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.main_footer .footer_md{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sub .sub_banner{
+    text-align: center;
+    padding-top:258px;
+    animation:fadein .8s forwards;
+}
+@keyframes fadein{
+    from{opacity: 0; transform: translateY(50px);}
+    to{opacity: 1;transform: translateY(0);}
+}  
+.sub_story .sub_banner p{
+    padding-top: var(--line-height);
+}
+.sprite{
+    background: url(../image/sprite.png)no-repeat;
+    text-indent: -9999em;
+}

@@ -1,67 +1,4 @@
 @import url(common.css);
-.main_header_top{
-    position: absolute;
-    z-index:1;
-    left:0;
-	right:0;
-	top: 0;
-    list-style: none;
-}
-header > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    transition:left 1s ease-out;
-}
-header nav{
-    display: flex;
-}
-header nav > ul{
-    display: flex;
-    gap:55px;
-    justify-content: space-between;
-}
-header .service_menu{
-    display: flex;
-    gap:10px;
-    justify-content: space-between;
-}
-header .mc>ul>li>a{
-    color: var(--white);
-}
-header nav li{
-    position: relative;
-}
-header nav>ul>li ul{
-    position: absolute;
-    top: -9999px;
-}
-header nav> ul > li ul li{
-    white-space:nowrap;
-}
-header nav>ul>li>a:hover{
-    color: var(--secondary-cr);
-}
-header nav> ul > li::after{
-    content: '';
-}
-header nav>ul>li:hover::after{
-    position: absolute;
-    width: 84px;
-    height: 7px;
-    bottom: 0;
-    left: 50%;
-    transform:translateX(-50%);
-    background: var(--secondary-cr);
-}
-header nav> ul > li:hover ul{
-    background: var(--white);
-    top:100%;
- }
-.mc .color1,.color1{
-    color: var(--main-cr);
-}
 .color2{
     color: var(--secondary-cr);
 }
@@ -269,50 +206,11 @@ header nav> ul > li:hover ul{
     left: 120px;
     color: var(--secondary-cr);
 }
-.main_footer::before{
-    content: '';
-    content: '';
-    clear: both;
-    display: block;
-    border: 1px solid #ebebeb;
-    margin: var(--line-height);
-}
-.main_footer .footer_top .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 76px;
-}
-.main_footer .footer_top .container .footmenu{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-.main_footer .footer_bottom .container{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-.main_footer .footer_md{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+
 /*-------------------*/
 .story_banner{
     background: url(../image/story/story_Banner.jpg) no-repeat;
     height: 670px;
-}
-.sub_story .sub_banner{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform:translate(-50%,-50%); 
-    text-align: center;
-}
-.sub_story .sub_banner p{
-    padding-top: var(--line-height);
 }
 .news h2{
     text-align: center;
@@ -344,3 +242,142 @@ header nav> ul > li:hover ul{
 .video_wrapper{
     display: none;
 }
+.modal_video .controls{
+    display: flex;
+    justify-content: center;
+    gap: 28.6px;
+}
+.modal_video .controls span{
+    width: 26px;
+    height: 26px;
+}
+.modal_video .controls .next{
+    background-position-x: 100%;
+}
+.modal_video .controls .prev{
+    background-position-x: -245px;
+}
+.modal_video .controls .next:hover{
+    background-position-y: 100%;
+}
+.modal_video .controls .prev:hover{
+    background-position-y: 100%;
+}
+.map .map_api{
+    background: url(../image/story/map.png);
+    width: 729px;
+    height: 420px;
+}
+.map .container{
+    padding: var(--line-height);
+    display: flex;
+    gap: 90px;
+}
+.map .container table{
+    width: 729px;
+}
+.map .container h2{
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+.map .container tr{
+    white-space: nowrap;
+    border-bottom: 1px solid #ebebeb;
+}
+.map .container th{
+    text-align: center;
+    width: 155px;
+    color: var(--main-cr); 
+    padding-top:var(--line-height); 
+}
+.map .container td{
+    padding-bottom:var(--line-height); 
+}
+.stock .stock_list{
+    display: flex;
+    flex-wrap:wrap;
+}
+.stock_list .stock_accodian{
+    white-space: nowrap;
+    width: 477px;
+    position: relative;
+}
+.stock_list .stock_accodian .material-symbols-outlined{
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+}
+.stock_graph{
+    margin: -165px 516px;
+}
+.stock_table_list{
+    margin: -313px 1077px ;
+}
+.stock_stock_table{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 22px;
+    flex-flow: row wrap
+}
+.stock_number{
+    margin: 136px -170px;
+}
+.stock_number table,.stock_graph table{
+    width: 547px;
+}
+.stock_number thead th,.stock_graph thead th{
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #9a9595;
+    background: #f2f2f2;
+    padding: 20px;
+}
+.stock_number tbody td,.stock_graph .graph td{
+    border-bottom: 1px solid #9a9595;
+    text-align: center;
+    padding: 20px;
+}
+.stock_graph .count td{
+    text-align: center;
+}
+.stock_table_list table{
+    width: 420px;
+ 
+}
+.stock_table_list table tr:first-child{
+    border-top: 2px solid #000;
+}
+.stock_table_list table tr:last-child{
+    border-bottom: 2px solid #000;
+}
+.stock_table_list table tr th{
+    background: #f2f2f2;
+    padding: 10px;
+}
+.stock_table_list table tr td{
+   text-align: center;
+   padding: 10px;
+}
+.stock_accodian{
+    border-top: 2px solid #000;
+}
+.stock_accodian_list{
+    border-bottom: 1px solid #9a9595;
+}
+/*----------------------stock------------------------*/
+.stock_banner{
+    background: url(../image/stock/stock_banner.png);
+    height: 670px;
+}
+.stock h2{
+    text-align: center;
+}
+/*----------------------recruit ------------------------*/
+
+.recruit_banner{
+    background: url(../image/recruit/recruit_banner.jpg);
+    height: 670px;
+}
+.recruit h2,.recruit p{
+    text-align: center;
+}
+
