@@ -170,18 +170,16 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #000;
-    padding-bottom: var(--line-height);
 }
 .side_menu .container .sb_title h2{
     position: relative;
 }
 .side_menu .material-symbols-outlined{
-    padding: 13.2px 0;
+   margin-top: 48px;
 }
 .side_menu .material-symbols-outlined:hover{
     color: var(--secondary-cr);
 }
-
 .side_menu .container .news li,.side_menu .container .recruit li{
     border-bottom: 1px solid #000;
     padding: var(--line-height) 0;
@@ -207,14 +205,13 @@
     color: var(--secondary-cr);
 }
 
-/*-------------------*/
+/*----------story---------*/
 .story_banner{
     background: url(../image/story/story_Banner.jpg) no-repeat;
     height: 670px;
 }
 .news h2{
     text-align: center;
-    padding: var(--line-height);
 }
 .news h3{
     padding: var(--line-height);
@@ -231,7 +228,6 @@
 }
 .modal_video h2{
     text-align: center;
-    padding: var(--line-height);
 }
 .modal_video .video_list ul{
     display: flex;
@@ -293,6 +289,27 @@
 .map .container td{
     padding-bottom:var(--line-height); 
 }
+
+/*----------------------stock------------------------*/
+.stock_banner{
+    background: url(../image/stock/stock_banner.png);
+    height: 670px;
+}
+.stock{
+    animation: up 0.8s forwards;
+}
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateX(50px) ;
+    }to{
+        opacity: 1;
+        transform: 0;
+    }
+}
+.stock h2{
+    text-align: center;
+}
 .stock .stock_list{
     display: flex;
     flex-wrap:wrap;
@@ -344,8 +361,6 @@
     left:1057px;
     top: 100px;
 }
-
-
 .stock_number table,.stock_graph table{
     width: 547px;
 }
@@ -387,14 +402,6 @@
 .stock_accodian_list{
     border-bottom: 1px solid #9a9595;
 }
-/*----------------------stock------------------------*/
-.stock_banner{
-    background: url(../image/stock/stock_banner.png);
-    height: 670px;
-}
-.stock h2{
-    text-align: center;
-}
 /*----------------------recruit ------------------------*/
 
 .recruit_banner{
@@ -403,5 +410,97 @@
 }
 .recruit h2,.recruit p{
     text-align: center;
+}
+.support_contents{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.recruit .links{
+    text-align: center;
+    padding:calc(var(--line-height)*2);
+}
+#family{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img1.jpg)no-repeat;
+}
+#housing{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img2.jpg)no-repeat;
+}
+#health{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img3.jpg)no-repeat;
+}
+#life{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img4.jpg)no-repeat;
+}
+#develeop{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img5.jpg)no-repeat;
+}
+.support_contents .item{
+    position: relative;
+    overflow: hidden;
+}
+.support_contents .nomal img,.support_contents .hover img{
+    filter: invert(100%) sepia(39%) saturate(0%) hue-rotate(238deg) brightness(118%) contrast(100%);
+}
+.support_contents .nomal,.support_contents .hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    transition: 0.5s;
+}
+.support_contents .item:hover .nomal{
+    display: none;
+}
+.support_contents .item::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    border-radius: 15px;
+    
+}
+.support_contents .item:hover::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,146,151,.3);
+    border-radius: 15px;
+}
+.support_contents .hover div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.support_contents .hover{
+    top: -100%;
+}
+.support_contents :hover .hover{
+   top: 50%;
 }
 
