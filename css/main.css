@@ -296,6 +296,7 @@
 .stock .stock_list{
     display: flex;
     flex-wrap:wrap;
+    position: relative;
 }
 .stock_list .stock_accodian{
     white-space: nowrap;
@@ -307,21 +308,44 @@
     right: 0;
     padding-top: 5px;
 }
-.stock_graph{
-    margin: -165px 516px;
+.standard{
+    position: absolute;
+    left:500px;
 }
-.stock_table_list{
-    margin: -313px 1077px ;
+.standard .material-symbols-outlined{
+    position: absolute;
+}
+.standard span.first{
+    position: absolute;
+    padding-top: 15px;
+}
+.standard span.third,.standard span.second{
+    padding-left: 95px;
 }
 .stock_stock_table{
     display: flex;
     flex-flow: row wrap;
     gap: 22px;
-    flex-flow: row wrap
+    position: relative;
 }
 .stock_number{
-    margin: 136px -170px;
+    position: absolute;
+    left:500px;
+    top: 100px;
+    
 }
+.stock_graph{
+    position: absolute;
+    left:500px;
+    top: 250px;
+}
+.stock_table_list{
+    position: absolute;
+    left:1057px;
+    top: 100px;
+}
+
+
 .stock_number table,.stock_graph table{
     width: 547px;
 }
