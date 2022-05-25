@@ -58,35 +58,44 @@
     justify-content: space-between;
     padding-top:calc(var(--line-height)*2);
 }
-.project_slide{
-    padding-top:calc(var(--line-height)*2);
-    position: relative;
-    white-space: nowrap;
-}
-.project_slide h3{
-    padding-top:var(--line-height);
-}
-.project_slide .arrow{
-    background: url(/image/main/arrow-right-long.png) no-repeat;
-    height: 51px;
-}
-.project_slide .sprite{
-    background: url(/image/sprite.png) no-repeat;
-    height: 51px;
-}
-.pj_wrapper{
-    position: relative;
+.project_list {
     display: flex;
-    gap: 300px;
-    align-items: center;
+    white-space: nowrap;
     overflow: hidden;
+    gap: 500px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
-.pj_wrapper ul{
+.arrow{
+    background: url(../image/main/arrow-right-long.png) no-repeat;
+    width: 88px;
+    height: 14px;
+    margin: 0 auto;
+}
+.project p.arrow:hover{
+    transform: scaleY(1.1)translate(8px,0);
+    transition: .4s;
+}
+.sprite{
+    width: 238px;
+    height: 51px;
+}
+.project_list .project{
+    position: relative;
+    text-align: center;
+}
+.project_list .project p{
+    margin-top: 27px;
+}
+.project_list ul li:nth-last-child(-n+4){
+    display: none;
+}
+.project_list .pj_wrapper{
     display: flex;
 }
 .pj_img ul{
     display: flex;
-    width: 100%;
 }
 .middle_slide{
     position: relative;
@@ -101,6 +110,7 @@
     height: 100%;
     position: absolute;
 }
+
 .mdsldie1{
     background: url(/image/main/banner1.jpg) no-repeat center/cover;
 
@@ -123,15 +133,26 @@
 .middle_slide .pj_pager{
     display: flex;
     justify-content: space-between;
-    gap: 150px;
+    gap: 586px;
 }
 .pj_pager a{
-    width: 8px;
-    height: 8px;
-    background: #009297;
+    width: 50px;
+    height: 50px;
+    background: none;
     border-radius:50%;
     text-indent: -9999em;
-    border:2px solid transparent;
+    border:5px solid #fff;
+}
+.pj_pager a::after{
+    content: '';
+    display: block;
+    border:2px dashed #fff ;
+    padding-left: 580px;
+    margin-top: -5px;
+    margin-left: 55px;
+}
+.pj_pager a:last-child::after{
+    display: none;
 }
 .brand_content .container .bc_list{
     display: flex;
@@ -147,20 +168,22 @@
 }
 .brand_content .container .bc_list div img{
     transition: all 0.2s linear;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
 }
 .brand_content .container .bc_list div:hover img{
     transform: scale(1.1);
 }
 .brand_content .container .bc_list div{
-    width:350px;
-    height: 350px;
-    overflow: hidden;
     border-radius: 50%;
 }
-.brand_content .container .bc_list div > p{
-    overflow: inherit 
+.brand_content .container .bc_list div:hover p{
+    color: var(--secondary-cr);
 }
-
+.brand_content .container .bc_list div p:nth-of-type(1){
+    padding-top: 27px;
+}
 .side_menu{
     padding-top:calc(var(--line-height)*2); 
 }
@@ -178,7 +201,14 @@
     position: relative;
 }
 .side_menu .material-symbols-outlined{
-   margin-top: 48px;
+   margin-top: 50px;
+}
+.side_menu .stock_img div .material-symbols-outlined{
+   margin-top: 12px;
+   margin-left: 35px;
+}
+.side_menu .stock_day div p{
+    padding-left: 20px;
 }
 .side_menu .material-symbols-outlined:hover{
     color: var(--secondary-cr);
@@ -297,18 +327,6 @@
     background: url(../image/stock/stock_banner.png);
     height: 670px;
 }
-.stock{
-    animation: up 0.8s forwards;
-}
-@keyframes up{
-    from{
-        opacity: 0;
-        transform: translateX(50px) ;
-    }to{
-        opacity: 1;
-        transform: 0;
-    }
-}
 .stock h2{
     text-align: center;
 }
@@ -349,18 +367,18 @@
 }
 .stock_number{
     position: absolute;
-    left:500px;
+    left:20px;
     top: 100px;
     
 }
 .stock_graph{
     position: absolute;
-    left:500px;
+    left:20px;
     top: 250px;
 }
 .stock_table_list{
     position: absolute;
-    left:1057px;
+    left:587px;
     top: 100px;
 }
 .stock_number table,.stock_graph table{
