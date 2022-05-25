@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/main.css">
     <title>GS건설</title>
 </head>
@@ -88,7 +89,7 @@
         <section class="stock">
             <h2 class="main_tt ttf">stock</h2>
             <div class="stock_list container">
-                <div class="stock_accodian">
+                <div class="stock_accodian" data-aos="fade-right">
                     <h3 class="sub_tt">경영정보<span class="material-symbols-outlined">add</span></h3>
                         <div class="stock_accodian_list">
                             <p>주주구성</p>
@@ -115,7 +116,7 @@
                             <p>Earning Release</p>
                         </div>
                 </div>
-                <div class="standard">
+                <div class="standard" data-aos="fade-right">
                     <h3 class="sub_tt">2022-05-03 기준</h3>
                     <span class="sub_tt first">41,900<span class="material-symbols-outlined color2">
                         arrow_drop_down
@@ -125,8 +126,8 @@
                         </span></span><br/>
                     <span class="content_tt third">등락률 <em class="color2">-0.95%</em></span>
                 </div>
-                <div class="stock_stock_table"></div>
-                    <div class="stock_number">
+                <div class="stock_stock_table">
+                    <div class="stock_number" data-aos="fade-up">
                         <table>
                             <thead>
                                 <th class="content_tt">시가</th>
@@ -144,7 +145,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="stock_graph">
+                    <div class="stock_graph" data-aos="fade-up">
                         <table>
                             <thead>
                                 <th class="content_tt">kospi</th>
@@ -171,7 +172,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="stock_table_list">
+                    <div class="stock_table_list" data-aos="fade-left">
                         <table>
                             <tbody>
                                 <tr>
@@ -256,6 +257,8 @@
             </div>
         </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

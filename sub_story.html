@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/main.css">
     <title>GS건설</title>
 </head>
@@ -89,8 +90,8 @@
             <div class="news_list container">
                 <ul>
                     <li class="list1">
-                        <img src="/image/story/news1.png" alt="뉴스이미지">
-                        <ul>
+                        <img src="/image/story/news1.png" alt="뉴스이미지" data-aos="fade-right">
+                        <ul data-aos="fade-left">
                             <h3 class="sub_tt">GS건설 자회사 엘리먼츠 유럽, 영국 런던에 고층 모듈러 호텔 수주</h3>
                             <li class="content_tt">&diams; 영국 런던 시내에 23층 규모의 오피스 호텔 시공계약…약 620억원 규모</li>
                             <li class="content_tt">&diams; 상부 17개층 호텔 유닛 전체 철골 모듈로 제작 설치 시공</li>
@@ -98,16 +99,16 @@
                         </ul>
                     </li>
                     <li class="list2">
-                        <img src="/image/story/news2.png" alt="뉴스이미지">
-                        <ul>
+                        <img src="/image/story/news2.png" alt="뉴스이미지" data-aos="fade-left">
+                        <ul data-aos="fade-right">
                             <h3 class="sub_tt">GS건설, 독일 ‘iF 디자인 어워드 2022' 에서 2개 부문 수상</h3>
                             <li class="content_tt">&diams; 건축부문 ‘과천자이 티하우스 스톤클라우드’, 제품부문 ‘자이스케이프-파고라’ 수상</li>
                             <li class="content_tt">&diams; 건축부문에서는 국내건설사 유일하게 건축물 일부요소가 아닌 건축물 자체로 받아 주목</li>
                         </ul>
                     </li>
                     <li class="list3">
-                        <img src="/image/story/news3.png" alt="뉴스이미지">
-                        <ul>
+                        <img src="/image/story/news3.png" alt="뉴스이미지" data-aos="fade-right">
+                        <ul data-aos="fade-left">
                             <h3 class="sub_tt">GS건설, 세계 최고 바이오디젤 생산설비 표준 모듈화 나선다.</h3>
                             <li class="content_tt">&diams; 덴마크 할도톱소(HALDOR TOPSOE)와 바이오디젤 생산설비 표준모듈화를 위한 MOU체결</li>
                             <li class="content_tt">&diams; GS건설이 할도톱소의 세계 최고 바이오디젤 핵심 공정을 모듈화해 세계시장 동반 진출</li>
@@ -115,8 +116,8 @@
                         </ul>
                     </li>
                     <li class="list4">
-                        <img src="/image/story/news4.png" alt="뉴스이미지">
-                        <ul>
+                        <img src="/image/story/news4.png" alt="뉴스이미지" data-aos="fade-left">
+                        <ul data-aos="fade-right">
                             <h3 class="sub_tt">GS건설, 신세계푸드와 친환경 연어 대중화를 위한 양해각서 체결</h3>
                             <li class="content_tt">&diams; GS건설이 민간투자자로 참여한 ‘부산 스마트양식시설’에서 생산될 연어 유통에 대한<br/> 상호협력 양해각서(MOU) 체결</li>
                             <li class="content_tt">&diams; GS건설 수처리 기술력과 신세계푸드의 유통 인프라가 만나 친환경 연어 대중화</li>
@@ -126,7 +127,7 @@
                 </ul>
             </div>
         </section>
-        <section class="modal_video">
+        <section class="modal_video" data-aos="fade-up">
             <h2 class="main_tt ttf">video</h2>
             <div class="video_list container">
                 <ul>
@@ -193,7 +194,7 @@
                 </div>
             </div>
         </section>
-        <section class="map">
+        <section class="map" data-aos="fade-up">
             <div class="container">
                 <div class="map_api">
                     <!-- 이미지 넣어두고 map_api 마지막에 연동하기 -->
@@ -269,7 +270,8 @@
             </div>
         </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 </html>
