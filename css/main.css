@@ -9,6 +9,9 @@
 .slide_container{
     transition:left 0.4s ease-out;
 }
+.sub_menu{
+    z-index: 1;
+}
 .full_video video{
     height: 100%;
     width: 100%;
@@ -187,7 +190,6 @@
 .side_menu .container .news li a:hover, .side_menu .container .recruit li a:hover{
     font-weight: bold;
 }
-
 .side_menu .stock_img{
     width: 478px;
     height: 323px;
@@ -205,7 +207,7 @@
     color: var(--secondary-cr);
 }
 
-/*----------story---------*/
+/*----------------story--------------*/
 .story_banner{
     background: url(../image/story/story_Banner.jpg) no-repeat;
     height: 670px;
@@ -402,6 +404,14 @@
 .stock_accodian_list{
     border-bottom: 1px solid #9a9595;
 }
+.stock_graph .count td{
+    position: relative;
+}
+.stock_graph .material-symbols-outlined{
+    position: absolute;
+    right:140px;
+    top: 30px;
+}
 /*----------------------recruit ------------------------*/
 
 .recruit_banner{
@@ -488,6 +498,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    transition: 0.5s;
     background: rgba(0,146,151,.3);
     border-radius: 15px;
 }
@@ -498,7 +509,7 @@
     gap: 40px;
 }
 .support_contents .hover{
-    top: -100%;
+    top: 150%;
 }
 .support_contents :hover .hover{
    top: 50%;
