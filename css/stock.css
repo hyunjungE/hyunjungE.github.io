@@ -1,0 +1,119 @@
+@import url(common.css);
+.stock_banner{
+    background: url(../image/stock/stock_banner.png);
+    height: 670px;
+}
+.stock h2{
+    text-align: center;
+}
+.stock .stock_list{
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+}
+.stock_list .stock_accodian{
+    white-space: nowrap;
+    width: 477px;
+    position: relative;
+}
+.stock_list .stock_accodian .material-symbols-outlined{
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+}
+.standard{
+    position: absolute;
+    left:500px;
+}
+.standard .material-symbols-outlined{
+    position: absolute;
+}
+.standard span.first{
+    position: absolute;
+    padding-top: 15px;
+}
+.standard span.third,.standard span.second{
+    padding-left: 95px;
+}
+.stock{
+    height: 100vh;
+}
+.stock{
+    margin-top: 150px;
+}
+.stock_stock_table{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 22px;
+    position: relative;
+}
+.stock_number{
+    position: absolute;
+    left:20px;
+    top: 100px;
+    
+}
+.stock_graph{
+    position: absolute;
+    left:20px;
+    top: 250px;
+}
+.stock_table_list{
+    position: absolute;
+    left:587px;
+    top: 100px;
+}
+.stock_number table,.stock_graph table{
+    width: 547px;
+}
+.stock_number thead th,.stock_graph thead th{
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #9a9595;
+    background: #f2f2f2;
+    padding: 20px;
+}
+.stock_number tbody td{
+    border-bottom: 1px solid #9a9595;
+    text-align: center;
+    padding: 20px;
+}
+.stock_graph .count td{
+    text-align: center;
+}
+.stock_table_list table{
+    width: 420px;
+}
+.stock_table_list table tr:first-child{
+    border-top: 2px solid #000;
+}
+.stock_table_list table tr:last-child{
+    border-bottom: 2px solid #000;
+}
+.stock_table_list table tr th{
+    background: #f2f2f2;
+    padding: 10px;
+}
+.stock_table_list table tr td{
+   text-align: center;
+   padding: 10px;
+}
+.stock_accodian{
+    border-top: 2px solid #000;
+}
+.stock_accodian_list{
+    border-bottom: 1px solid #9a9595;
+}
+.stock_graph .count td{
+    position: relative;
+    padding-top: 270px;
+}
+.stock_graph .material-symbols-outlined{
+    position: absolute;
+    right:140px;
+    top: 300px;
+}
+#myChart{
+    position: absolute;
+    top: 55px;
+    border-bottom: 1px solid #9a9595;
+}

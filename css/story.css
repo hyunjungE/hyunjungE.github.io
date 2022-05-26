@@ -1,0 +1,100 @@
+@import url(common.css);
+.story_banner{
+    background: url(../image/story/story_Banner.jpg) no-repeat;
+    height: 670px;
+}
+.news h2{
+    text-align: center;
+}
+.news h3{
+    padding: var(--line-height);
+}
+.news .news_list ul li{
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--line-height);
+}
+.news .news_list ul .list2,.news .news_list ul .list4{
+    flex-direction:row-reverse;
+}
+.modal_video h2{
+    text-align: center;
+}
+.modal_video .video_list ul{
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    gap: 28.6px;
+}
+.video_wrapper{
+    display: none;
+}
+.modal_video .controls{
+    display: flex;
+    justify-content: center;
+    gap: 28.6px;
+}
+.modal_video .controls span{
+    width: 26px;
+    height: 26px;
+}
+.modal_video .controls .next{
+    background-position-x: 100%;
+}
+.modal_video .controls .prev{
+    background-position-x: -245px;
+}
+.modal_video .controls .next:hover{
+    background-position-y: 100%;
+}
+.modal_video .controls .prev:hover{
+    background-position-y: 100%;
+}
+.video_wrapper{
+    position: fixed;
+    left: 0;right: 0;bottom: 0;top: 0;
+    background: rgba(0,0,0,.5);
+    z-index:10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition:0.3s;
+}
+.video_wrapper.active{
+    opacity: 1;
+    visibility: visible;
+}
+.map .map_api{
+    background: url(../image/story/map.png);
+    width: 729px;
+    height: 420px;
+}
+.map .container{
+    padding: var(--line-height);
+    display: flex;
+    gap: 90px;
+}
+.map .container table{
+    width: 729px;
+}
+.map .container h2{
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+.map .container tr{
+    white-space: nowrap;
+    border-bottom: 1px solid #ebebeb;
+}
+.map .container th{
+    text-align: center;
+    width: 155px;
+    color: var(--main-cr); 
+    padding-top:var(--line-height); 
+}
+.map .container td{
+    padding-bottom:var(--line-height); 
+}

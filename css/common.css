@@ -163,9 +163,11 @@ header nav> ul > li:hover ul{
     padding-top: var(--line-height);
 }
 .sprite{
+    display: block;
     background: url(../image/sprite.png)no-repeat;
     text-indent: -9999em;
 }
+
 .btn{
     border: 1px solid #000;
     border-radius: 2px;

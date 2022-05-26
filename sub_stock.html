@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/stock.css">
     <title>GS건설</title>
 </head>
 <body>
     <header class="sub_header_top">
         <div class="container">
-            <h1 class="sub_logo"><a href="#"><img src="image/logo/logo_hover.png" alt="GS건설로고"></a></h1>
+            <h1 class="sub_logo"><a href="index.html"><img src="image/logo/logo_hover.png" alt="GS건설로고"></a></h1>
             <nav class="sub_menu">
                 <ul>
                     <li><a href="#" class="sub_tt">회사소개</a>
@@ -145,7 +145,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="stock_graph" data-aos="fade-up">
+                    <div class="stock_graph" data-aos="fade-up" >
                         <table>
                             <thead>
                                 <th class="content_tt">kospi</th>
@@ -153,12 +153,8 @@
                                 <th class="content_tt">건설업</th>
                             </thead>
                             <tbody>
-                                <tr class="graph">
-                                    <td>graph</td>
-                                    <td>graph</td>
-                                    <td>graph</td>
-                                </tr>
                                 <tr class="count">
+                                    <canvas id="myChart" data-aos="fade-up"  data-aos-delay="100"></canvas>
                                     <td class="content_tt">2680.46<br/><span class="material-symbols-outlined color2">
                                         arrow_drop_down
                                         </span>6.99(0.26%)</td>
@@ -170,6 +166,7 @@
                                         </span>1.28(1.10%)</td>
                                 </tr>
                             </tbody>
+                            
                         </table>
                     </div>
                     <div class="stock_table_list" data-aos="fade-left">
@@ -258,6 +255,7 @@
         </div>
     </footer>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>

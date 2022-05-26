@@ -1,0 +1,103 @@
+@import url(common.css);
+
+.recruit_banner{
+    background: url(../image/recruit/recruit_banner.jpg);
+    height: 670px;
+}
+.recruit h2,.recruit p{
+    text-align: center;
+}
+.support_contents{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.recruit .links{
+    text-align: center;
+    padding:calc(var(--line-height)*2);
+}
+#family{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img1.jpg)no-repeat;
+}
+#housing{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img2.jpg)no-repeat;
+}
+#health{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img3.jpg)no-repeat;
+}
+#life{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img4.jpg)no-repeat;
+}
+#develeop{
+    width: 370px;
+    height: 504px;
+    border-radius: 15px;
+    background: url(../image/recruit/recruit_img5.jpg)no-repeat;
+}
+.support_contents .item{
+    position: relative;
+    overflow: hidden;
+}
+.support_contents .nomal img,.support_contents .hover img{
+    filter: invert(100%) sepia(39%) saturate(0%) hue-rotate(238deg) brightness(118%) contrast(100%);
+}
+.support_contents .nomal,.support_contents .hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    transition: 0.5s;
+}
+.support_contents .item:hover .nomal{
+    display: none;
+}
+.support_contents .item::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    border-radius: 15px;
+    
+}
+.support_contents .item:hover::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s;
+    background: rgba(0,146,151,.3);
+    border-radius: 15px;
+}
+.support_contents .hover div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.support_contents .hover{
+    top: 150%;
+}
+.support_contents :hover .hover{
+   top: 50%;
+}
+
