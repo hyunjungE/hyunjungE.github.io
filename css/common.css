@@ -57,14 +57,6 @@ body{
 .white_cr{
     color: var(--white);
 }
-.main_header_top{
-    position: absolute;
-    z-index:1;
-    left:0;
-	right:0;
-	top: 0;
-    list-style: none;
-}
 header > div{
     display: flex;
     justify-content: space-between;
