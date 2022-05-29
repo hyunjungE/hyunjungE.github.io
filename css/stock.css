@@ -11,15 +11,35 @@
     flex-wrap:wrap;
     position: relative;
 }
+
 .stock_list .stock_accodian{
     white-space: nowrap;
     width: 477px;
     position: relative;
 }
-.stock_list .stock_accodian .material-symbols-outlined{
+.stock_list .stock_accodian .material-symbols-outlined.add{
     position: absolute;
     right: 0;
     padding-top: 5px;
+}
+.stock_title .material-symbols-outlined.remove{
+    position: absolute;
+    right: 0;
+    margin-top: -28px;
+    display: none;
+}
+.stock_accodian_list{
+    display: none;
+}
+.stock_title{
+    border-bottom:1px solid #9a9595;
+	transition:0.35s;
+}
+.stock_title.ui-state-active .material-symbols-outlined{
+    display: none;
+}
+.stock_title.ui-state-active .material-symbols-outlined.remove{
+    display: block;
 }
 .standard{
     position: absolute;
@@ -51,7 +71,6 @@
     position: absolute;
     left:20px;
     top: 100px;
-    
 }
 .stock_graph{
     position: absolute;
@@ -112,6 +131,7 @@
     right:140px;
     top: 300px;
 }
+
 #myChart{
     position: absolute;
     top: 55px;

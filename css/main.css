@@ -1,7 +1,4 @@
 @import url(common.css);
-.color2{
-    color: var(--secondary-cr);
-}
 .main_slide{
     height: 100vh;
     overflow: hidden;
@@ -12,7 +9,7 @@
 .sub_menu{
     z-index: 1;
 }
-.full_video video{
+ .full_video video{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -20,36 +17,7 @@
     display: flex;
     z-index:-1;
 }
-.full_video::after video{
-    content:'';
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-}
-.main_slide .controls{
-    position: absolute;
-    bottom: 27px;
-    left: 50%;
-    transform:translateX(-50%);
-}
-.main_slide .pager{
-    display: flex;
-    gap: 15px;
-}
-.pager a{
-    width: 8px;
-    height: 8px;
-    background: #009297;
-    border-radius:50%;
-    text-indent: -9999em;
-    border:2px solid transparent;
-}
-.pager a:nth-child(1){
-    border:2px solid var(--secondary-cr);
-    background: none;
-}
+
 .counters{
     text-align: center;
 }
@@ -97,20 +65,28 @@
 .pj_img ul{
     display: flex;
 }
-.middle_slide{
-    position: relative;
-    height: 100vh;
+.swiper {
+    height: 947px;
+  }
+.middle_slide .mdslide div{
+    text-indent: -9999em;
 }
-.slide_wrapper{
-    overflow: hidden;
-    position: relative;
+.pj_controls span{
+    margin-left: 50px;
 }
-.mdslide li{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.swiper-scrollbar-drag{
+    background: #fff;
 }
-
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background: var(--secondary-cr);
+    margin:0 var(--swiper-pagination-bullet-horizontal-gap,8px);
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    border:2px solid var(--secondary-cr);
+    background: none;
+}
 .mdsldie1{
     background: url(/image/main/banner1.jpg) no-repeat center/cover;
 
@@ -121,68 +97,67 @@
 }
 .mdsldie3{
     background: url(/image/main/banner3.jpg) no-repeat center/cover;
+} 
 
-}
-.middle_slide .pj_controls{
-   position: absolute;
-   left: 50%;
-   bottom: 20px;
-   transform:translateX(-50%);
-   display: flex;
-}
-.middle_slide .pj_pager{
-    display: flex;
-    justify-content: space-between;
-    gap: 586px;
-}
-.pj_pager a{
-    width: 50px;
-    height: 50px;
-    background: none;
-    border-radius:50%;
-    text-indent: -9999em;
-    border:5px solid #fff;
-}
-.pj_pager a::after{
-    content: '';
-    display: block;
-    border:2px dashed #fff ;
-    padding-left: 580px;
-    margin-top: -5px;
-    margin-left: 55px;
-}
-.pj_pager a:last-child::after{
-    display: none;
-}
+
 .brand_content .container .bc_list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 250px;
+   
 }
 .brand_content h2{
     text-align: center;
     padding:var(--line-height);
 }
-.brand_content p{
+/* .brand_content p{
     text-align: center;
+} */
+.brand_content .container .bc_list div{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
-.brand_content .container .bc_list div img{
+.brand_content .container .bc_list div::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    border-radius:50%;
+    display: none;
+}
+.brand_content .container .bc_list div:hover::after{
+    display: block;
+}
+.brand_content .container .bc_list div>img{
     transition: all 0.2s linear;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 .brand_content .container .bc_list div:hover img{
     transform: scale(1.1);
 }
-.brand_content .container .bc_list div{
-    border-radius: 50%;
+.brand_content .container .bc_list div p{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
 }
 .brand_content .container .bc_list div:hover p{
     color: var(--secondary-cr);
+    top: 50%;
 }
 .brand_content .container .bc_list div p:nth-of-type(1){
-    padding-top: 27px;
+    padding-bottom:var(--line-height);
 }
 .side_menu{
     padding-top:calc(var(--line-height)*2); 

@@ -2,67 +2,73 @@ AOS.init({
     once: true,
     duration: 800,
 });
+/*-------------------------------*/
+const resultNum = $('.counter_target');
 
-
-let videoBtn = $('.video_list img');
-let targetVideo = $('#video1');
-let orgUrl = $('iframe').attr('src');
-
-videoBtn.click(function(e){
-    e.preventDefault();
-    targetVideo.addClass('active');   
-    
-    let newUrl = orgUrl.concat('?autoplay=1');
-
-    targetVideo.$('iframe').attr('src', newUrl);
-
+resultNum.each(function(){
+    const targetNum = $(this).attr('data-target');
+    let number = 0;
+    let $this = $(this);
+    let numTimer = setInterval(function(){
+        number++;
+        $this.text(number);
+        if(number == targetNum){
+            clearInterval(numTimer)
+        }
+    },50);
 });
-
-targetVideo.click(function(){
-    targetVideo.removeClass('active');
-    targetVideo.$('iframe').attr('src', orgUrl);
+/*-------------------------------*/
+const main_swiper = new Swiper('.slide_container ', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 18000,
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  }
 });
 /*---------------------------------*/
-  const labels = [
-    '',
-    '',
-    '',
-  ];
-
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: '',
-      backgroundColor: 'rgb(255, 0, 0)',
-      data: [2687.45, 901.82, 116.25],
-    },
-    {
-        label: '',
-        backgroundColor: 'rgb(0, 0, 255)',
-        data: [2680.46, 907.57, 114.97],
-      } ]
-  };
-
-  const config = {
-    type: 'bar',
-    data: data,
-    options: {
-        scales: {
-            y: {
-               display:false
-            },
-         x: {
-               display:false
-            }
-        },
-        plugins:{
-            legend:{
-              display:false
-            }        
-          }
-    }
-  };
-  const myChart = new Chart(
-    $('#myChart'),
-    config
-  );
+const swiper = new Swiper('.middle_slide', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+$('.video_list .controls span.next').click(function(){
+  controlSwiper.slideNext();
+});
+$('.video_list .controls span.prev').click(function(){
+  controlSwiper.slidePrev();
+});
+/*--------------------------------------*/
+let MultiSwiper = new Swiper(".video_list", {
+  slidesPerView: 4,
+  spaceBetween: 28.6,
+  slidesPerGroup: 4,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+/*---------------------------- */

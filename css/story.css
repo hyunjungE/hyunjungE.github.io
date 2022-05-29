@@ -22,29 +22,22 @@
 .modal_video h2{
     text-align: center;
 }
-.modal_video .video_list ul{
-    display: flex;
-    text-align: center;
-    overflow: hidden;
-    gap: 28.6px;
-}
-.video_wrapper{
-    display: none;
-}
-.modal_video .controls{
-    display: flex;
-    justify-content: center;
-    gap: 28.6px;
+.video_list{
+    padding-bottom:calc(var(--line-height)*2) ;
 }
 .modal_video .controls span{
+    position: absolute;
+    top: 350px;
     width: 26px;
     height: 26px;
 }
 .modal_video .controls .next{
     background-position-x: 100%;
+    right: 669px;
 }
 .modal_video .controls .prev{
     background-position-x: -245px;
+    left: 733px;
 }
 .modal_video .controls .next:hover{
     background-position-y: 100%;
@@ -67,6 +60,9 @@
 .video_wrapper.active{
     opacity: 1;
     visibility: visible;
+}
+.map{
+    padding-top: calc(var(--line-height)*2);
 }
 .map .map_api{
     background: url(../image/story/map.png);
