@@ -110,7 +110,7 @@ let MultiSwiper = new Swiper(".video_list", {
   },
 });
 /*---------------------------- */
-let topHeader =$('header');
+let topHeader =$('.main_header_top');
     let headerOst = topHeader.offset().top;
 
     $(window).scroll(function(){

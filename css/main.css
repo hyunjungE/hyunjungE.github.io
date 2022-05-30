@@ -18,7 +18,7 @@
     background: var(--white);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-.main_header_top.sticky .mc>ul>li>a,header.active .mc>ul>li>a{
+.main_header_top.sticky .mc>ul>li>a,.main_header_top.active .mc>ul>li>a{
     color: var(--black);
 }
 .full_video video{
@@ -46,11 +46,41 @@
 .slide_container{
     transition:left 0.4s ease-out;
 }
-.sprite{
+.sprite1 .sprite{
+    background: url(../image/sprite/sprite1.png);
     margin-top: var(--line-height) ;
     width: 238px;
     height: 51px;
 }
+.sprite2 .sprite{
+    background: url(../image/sprite/sprite2.png);
+    margin-top: var(--line-height) ;
+    width: 238px;
+    height: 51px;
+}
+.sprite3 .sprite{
+    background: url(../image/sprite/sprite3.png);
+    margin-top: var(--line-height) ;
+    width: 238px;
+    height: 51px;
+}
+.sprite4 .sprite{
+    background: url(../image/sprite/sprite4.png);
+    margin-top: var(--line-height) ;
+    width: 238px;
+    height: 51px;
+}
+.sprite5 .sprite{
+    background: url(../image/sprite/sprite5.png);
+    margin-top: var(--line-height) ;
+    width: 238px;
+    height: 51px;
+}
+/* .sprite{
+    margin-top: var(--line-height) ;
+    width: 238px;
+    height: 51px;
+} */
 .arrow{
     background: url(../image/main/arrow-right-long.png) no-repeat;
     width: 88px;

@@ -92,7 +92,7 @@ header:hover::after{
 .main_header_top.active{
     background:linear-gradient(white 60px, rgba(255,255,255,1) 70px);
     position: absolute;
-    z-index: 3;
+    z-index: 1000;
     left: 0;
     right: 0;
     top: 0;
@@ -103,7 +103,7 @@ header:hover::after{
 .sub_header_top{
     background:linear-gradient(white 60px, rgba(255,255,255,1) 60px);
     position: absolute;
-    z-index: 3;
+    z-index: 1000;
     left: 0;
     right: 0;
     top: 0;
@@ -216,7 +216,7 @@ header nav> ul > li:hover ul{
 .sub_story .sub_banner p{
     padding-top: var(--line-height);
 }
-.sprite{
+.controls .sprite{
     display: block;
     background: url(../image/sprite.png)no-repeat;
     text-indent: -9999em;
