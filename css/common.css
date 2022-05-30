@@ -11,6 +11,7 @@
     --white : #fff;
     --con-width : 1490px;
     --ttf: uppercase;
+    --black : #000;
 }
 *{
     font-family: var(--font);
@@ -28,14 +29,7 @@ h2{
 .ttf{
     text-transform: var(--ttf);
 }
-.main_header_top{
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    top: 0;
 
-}
 header{
     text-decoration: none;
     list-style: none;
@@ -65,6 +59,58 @@ body{
 .white_cr{
     color: var(--white);
 }
+header:hover::after{
+    content: '';
+    display: block;
+    border: 1px solid #9a9595;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+}
+.sub{
+    padding-top: 140px;
+}
+.sub_img{
+    display: flex;
+    gap: 10px;
+}
+.sub_img img{
+    padding-top: 20px;
+}
+.main_header_top{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    height:130px; 
+	overflow:hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.main_header_top.active{
+    background:linear-gradient(white 60px, rgba(255,255,255,1) 70px);
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    height:130px; 
+	overflow:hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.sub_header_top{
+    background:linear-gradient(white 60px, rgba(255,255,255,1) 60px);
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    height:130px;
+	overflow:hidden;
+    display: block;
+}
 header > div{
     display: flex;
     justify-content: space-between;
@@ -78,7 +124,7 @@ header nav{
 }
 header nav > ul{
     display: flex;
-    gap:75px;
+    gap:65px;
     justify-content: space-between;
 }
 header .service_menu{
@@ -89,15 +135,20 @@ header .service_menu{
 header .mc>ul>li>a{
     color: var(--white);
 }
-header nav li{
+header nav> ul > li{
     position: relative;
 }
 header nav>ul>li ul{
     position: absolute;
-     top: -500px;
-}
-header nav> ul > li ul li{
+    top: 85px;
     white-space:nowrap;
+    text-align: center;
+}
+header nav>ul>li:first-child ul{
+    left: -40px;
+}
+header nav>ul>li:nth-child(2) ul{
+    left: -22px;
 }
 header nav ul>li a:hover {
     color: var(--secondary-cr);
@@ -116,8 +167,7 @@ header nav>ul>li:hover::after{
 }
 header nav> ul > li:hover ul{
     background: var(--white);
-    top:100%;
- }
+}
 .mc .color1,.color1{
     color: var(--main-cr);
 }

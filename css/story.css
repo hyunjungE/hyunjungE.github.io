@@ -33,11 +33,11 @@
 }
 .modal_video .controls .next{
     background-position-x: 100%;
-    right: 669px;
+    right: 47%;
 }
 .modal_video .controls .prev{
-    background-position-x: -245px;
-    left: 733px;
+    background-position-x: -245px; 
+    left: 47%;
 }
 .modal_video .controls .next:hover{
     background-position-y: 100%;

@@ -2,6 +2,32 @@ AOS.init({
     once: true,
     duration: 800,
 });
+/*-----------------*/
+/*---------*/
+let header = $('header'),
+		menu = header.find('nav>ul>li'),
+		headerHeight = header.outerHeight(),
+		newHeight = 0,
+		subMenu = menu.find('ul');
+
+		subMenu.each(function(){
+			if($(this).outerHeight()>newHeight){
+				newHeight = headerHeight + $(this).outerHeight();
+			}
+		});
+    menu.mouseover(function(){
+			header.addClass('active');
+		})
+		.mouseout(function(){
+			header.removeClass('active');
+		});
+
+		menu.mouseover(function(){
+			header.stop().animate({height:newHeight});
+		})
+		.mouseout(function(){
+			header.stop().animate({height:headerHeight});
+		});
 /*-------------------------------*/
 const resultNum = $('.counter_target');
 
@@ -15,8 +41,10 @@ resultNum.each(function(){
         if(number == targetNum){
             clearInterval(numTimer)
         }
-    },50);
+    },100);
 });
+
+          
 /*-------------------------------*/
 const main_swiper = new Swiper('.slide_container ', {
   // Optional parameters
@@ -31,13 +59,23 @@ const main_swiper = new Swiper('.slide_container ', {
     clickable:true
   }
 });
+/*-------------------------------*/
+const pj_swiper = new Swiper('.pj_wrapper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  }
+  // If we need pagination
+});
 /*---------------------------------*/
 const swiper = new Swiper('.middle_slide', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 5000,
   },
   // If we need pagination
   pagination: {
@@ -72,3 +110,15 @@ let MultiSwiper = new Swiper(".video_list", {
   },
 });
 /*---------------------------- */
+let topHeader =$('header');
+    let headerOst = topHeader.offset().top;
+
+    $(window).scroll(function(){
+        let stc = $(this).scrollTop();
+        
+        if(stc > headerOst){
+          topHeader.addClass('sticky');
+        }else{
+          topHeader.removeClass('sticky');
+        };
+});
