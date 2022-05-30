@@ -235,3 +235,16 @@ header nav> ul > li:hover ul{
     background: var(--main-cr);
     color: var(--white);
 }
+.arrow_up{
+    float: right;
+    margin-right: 130px;
+}
+.arrow_up img:hover{
+    transform: scale(1.5) translate(0,-8px);
+    transition: .2s linear;
+}
+.arrow_up:after{
+    content: '';
+    clear: both;
+    display: block;
+}
