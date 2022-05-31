@@ -1,3 +1,8 @@
+$( ".stock_accodian" ).accordion({
+  collapsible: true
+});
+
+
 const labels = [
     '',
     '',
@@ -43,6 +48,4 @@ const labels = [
     config
   );
   /*-----------------------------*/ 
-  $( ".stock_accodian" ).accordion({
-    collapsible: true
-  });
+ 
