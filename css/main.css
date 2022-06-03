@@ -150,28 +150,37 @@
 .mdsldie3{
     background: url(/image/main/banner3.jpg) no-repeat center/cover;
 } 
-.brand_content .container .bc_list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 250px;
-   
-}
+
 .brand_content h2{
     text-align: center;
     padding:var(--line-height);
 }
-/* .brand_content p{
-    text-align: center;
-} */
-.brand_content .container .bc_list div{
+.brand_content .container .bc_list {
+    display: flex;
+    justify-content: center;
+    white-space: wrap;
+    gap: 250px;
+}
+
+.brand_content .container .bc_list .bg_wrap>img{
+    transition: all 0.2s linear;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.brand_content .container .bc_list .bg_wrap{
     border-radius: 50%;
     width: 300px;
     height: 300px;
     overflow: hidden;
     position: relative;
 }
-.brand_content .container .bc_list div::after{
+.brand_content .container .bc_list .caption{
+    text-align: center;
+    padding-top: var(--line-height);
+}
+.brand_content .container .bc_list .bg_wrap::after {
     content:'';
     position: absolute;
     left: 0;
@@ -182,35 +191,29 @@
     border-radius:50%;
     display: none;
 }
-.brand_content .container .bc_list div:hover::after{
+.brand_content .container .bc_list .bg_wrap:hover::after{
     display: block;
 }
-.brand_content .container .bc_list div>img{
-    transition: all 0.2s linear;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-}
-.brand_content .container .bc_list div:hover img{
+.brand_content .container .bc_list .bg_wrap:hover img{
     transform: scale(1.1);
 }
-.brand_content .container .bc_list div p{
+.brand_content .container .bc_list .bg_wrap a{
     position: absolute;
-    top: -100%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 3;
+    font-size: 54px;
 }
-.brand_content .container .bc_list div:hover p{
-    color: var(--secondary-cr);
+.brand_content .container .bc_list .bg_wrap:hover a{
+    color: var(--white);
     top: 50%;
 }
-.brand_content .container .bc_list div p:nth-of-type(1){
-    padding-bottom:var(--line-height);
+.brand_content .container .bc_list .bc_list_all:hover .caption p{
+    color: var(--secondary-cr);
 }
-.brand_content .container .bc_list div p:nth-of-type(2){
-    padding-top:var(--line-height);
-}
+
+/*---------------------------*/
 .side_menu{
     padding-top:calc(var(--line-height)*2); 
 }

@@ -88,6 +88,7 @@ header:hover::after{
     height:130px; 
 	overflow:hidden;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
+    transition:height 0.3s;
 }
 .main_header_top.active{
     background:linear-gradient(white 60px, rgba(255,255,255,1) 70px);
@@ -110,6 +111,7 @@ header:hover::after{
     height:130px;
 	overflow:hidden;
     display: block;
+    transition:height 0.3s;
 }
 header > div{
     display: flex;
@@ -150,7 +152,7 @@ header nav>ul>li:first-child ul{
 header nav>ul>li:nth-child(2) ul{
     left: -22px;
 }
-header nav ul>li a:hover {
+header nav>ul>li a:hover {
     color: var(--secondary-cr);
 }
 header nav> ul > li::after{
@@ -221,11 +223,14 @@ header nav> ul > li:hover ul{
     background: url(../image/sprite.png)no-repeat;
     text-indent: -9999em;
 }
-
 .btn{
-    border: 1px solid #000;
-    border-radius: 2px;
-    padding: 0 20px;
+    border: 1px solid #9a9595;
+    border-radius: 5px;
+    padding: 3px 50px;
+    margin-left: 20px;
+}   
+.btn:first-child{
+    margin-left: 0;
 }
 .basic{
     background: var(--main-cr);
