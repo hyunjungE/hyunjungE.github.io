@@ -3,6 +3,8 @@ AOS.init({
     duration: 800,
 });
 /*-----------------*/
+
+
 /*---------*/
 let header = $('header'),
 		menu = header.find('nav>ul>li'),
@@ -44,7 +46,8 @@ resultNum.each(function(){
     },100);
 });
 
-          
+ /*-------------------- */         
+
 /*-------------------------------*/
 const main_swiper = new Swiper('.slide_container ', {
   // Optional parameters
@@ -59,6 +62,8 @@ const main_swiper = new Swiper('.slide_container ', {
     clickable:true
   }
 });
+
+
 /*-------------------------------*/
 const pj_swiper = new Swiper('.pj_wrapper', {
   // Optional parameters
@@ -97,6 +102,7 @@ $('.video_list .controls span.next').click(function(){
 $('.video_list .controls span.prev').click(function(){
   controlSwiper.slidePrev();
 });
+
 /*--------------------------------------*/
 let MultiSwiper = new Swiper(".video_list", {
   slidesPerView: 4,
@@ -110,15 +116,35 @@ let MultiSwiper = new Swiper(".video_list", {
   },
 });
 /*---------------------------- */
-let topHeader =$('.main_header_top');
-    let headerOst = topHeader.offset().top;
 
-    $(window).scroll(function(){
-        let stc = $(this).scrollTop();
-        
-        if(stc > headerOst){
-          topHeader.addClass('sticky');
-        }else{
-          topHeader.removeClass('sticky');
-        };
+
+$('#fullpage').fullpage({
+  //options here
+  navigation: true,
+  navigationPosition: 'right',
+  autoScrolling:true,
+  scrollHorizontally: true,
+  slidesNavigation: true,
+  slidesNavPosition: 'top',
+  keyboardScrolling: true,
+  afterLoad: function(origin, destination, direction, trigger){
+    if(destination.index != 0){
+      $('.main_header_top').addClass('sticky');
+    }else{
+      $('.main_header_top').removeClass('sticky');
+    };
+
+  }
 });
+// let topHeader =$('.main_header_top');
+//     let headerOst = topHeader.offset().top;
+
+//     $(window).scroll(function(){
+//         let stc = $(this).scrollTop();
+        
+//         if(stc > headerOst){
+//           topHeader.addClass('sticky');
+//         }else{
+//           topHeader.removeClass('sticky');
+//         };
+// });

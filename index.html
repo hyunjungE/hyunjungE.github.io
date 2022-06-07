@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css.map">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/vendor/modernizr.custom.min.js"></script>
     <script src="./js/vendor/jquery-1.10.2.min.js"></script>
-    
+
 </head>
 <body>
     <header class="main_header_top" role="banner" id="top">
@@ -89,9 +91,9 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="fullpage">
         <div class="main_slide">
-            <div class="swiper slide_container">
+            <div class="section swiper slide_container ">
                 <div class="swiper-wrapper full_video">
                     <div class="swiper-slide sldie1">
                         <video src="image/mp4/gsvideo.mp4" autoplay loop muted>video1</video>
@@ -103,11 +105,11 @@
                 <div class="swiper-pagination controls"></div>
             </div>
         </div>
-        <section class="counters">
-            <div class="container"  data-aos="fade-left" data-aos-delay="300">
+        <section class="section counters ">
+            <div class=" container">
                 <h2 class="main_tt">GS 건설은 더 새롭게 도약 합니다.</h2>
                 <p>‘고객과 함께 내일을 꿈꾸며 새로운 삶의가치를 창조합니다.’</p>
-                    <ul class="counters_list">
+                    <ul class=" counters_list">
                         <li class="counters_wrap">
                             <img src="/image/main/cc.png" alt="anniversary">
                             <h3 class="sub_tt counter_target" id="counter1" data-target="54">0</h3>주년
@@ -127,9 +129,9 @@
                     </ul>
             </div>
         </section>
-        <section class="project_slide">
-            <div class="container" data-aos="fade-right" data-aos-delay="300">
-                <div class="swiper pj_wrapper">
+        <section class="section project_slide ">
+            <div class=" container">
+                <div class=" swiper pj_wrapper">
                     <div class="swiper-wrapper project">
                         <div class="swiper-slide sprite1">
                             <div>
@@ -190,8 +192,8 @@
                 </div>
             </div>
         </section>
-        <div class="swiper middle_slide" data-aos="fade-up"data-aos-delay="300">
-            <div class="swiper-wrapper mdslide">
+        <div class="section swiper middle_slide ">
+            <div class=" swiper-wrapper mdslide">
                 <div class="swiper-slide mdsldie1">
                     <!-- <div>
                         <h2>GS건설의 사업</h2>
@@ -215,11 +217,11 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
-        <section class="brand_content">
-            <div class="container" data-aos="fade-left" data-aos-delay="300">
+        <section class="section brand_content ">
+            <div class=" container" >
             <h2 class="main_tt">경영방침</h2>
                 <div class="bc_list">
-                    <div class="bc_list_all">
+                    <div class=" bc_list_all">
                         <div class="bg_wrap">
                             <img src="image/main/safety.png" alt="">
                             <a href="" class="material-symbols-outlined">zoom_in</a>
@@ -258,8 +260,8 @@
                 </div>
             </div>
         </section>
-        <section class="side_menu" >
-            <div class="container" data-aos="fade-right"data-aos-delay="300">
+        <section class="section side_menu " >
+            <div class=" container">
                 <div class="story_list">
                     <div class="sb_title">
                         <h2 class="main_tt">story</h2>
@@ -309,49 +311,51 @@
         <div>
             <a href="index.html" class="arrow_up ttf"><img src="image/arrow-up.svg" alt=""> top</a>
         </div>
-    </main>
-    <footer class="main_footer">
-        <div class="footer_top">
-            <div class="container">
-                <p class="footer_logo"><a href="index.html"><img src="/image/logo/logo_hover.png" alt="GS건설푸터로고"></a></p>
-                <ul class="footmenu">
-                    <li><a href="#" class="content_sub_tt">사이버신문고</a></li>
-                    <li><a href="#" class="content_sub_tt">|</a></li>
-                    <li><a href="#" class="content_sub_tt">개인정보처리방침</a></li>
-                    <li><a href="#" class="content_sub_tt">|</a></li>
-                    <li><a href="#" class="content_sub_tt">이메일주소무단수집거부</a></li>
-                    <li><a href="#" class="content_sub_tt">|</a></li>
-                    <li><a href="#" class="content_sub_tt">고객센터</a></li>
-                    <li><a href="#" class="content_sub_tt">|</a></li>
-                    <li><a href="#" class="content_sub_tt">사이트맵</a></li>
-                    <li><a href="#" class="content_sub_tt">|</a></li>
-                    <li><a href="#" class="content_sub_tt">본사(그랑서울) 방문 예약</a></li>
-                </ul>
-                <div class="footer_md">
-                    <img src="/image/main/WA_mark.png" alt="wa품질인증마크">
-                    <select name="familysite" id="familysite" >
-                        <option value="" class="content_sub_tt">familysite</option>
-                        <option value="" class="content_sub_tt">Brand</option>
-                        <option value="" class="content_sub_tt">자회사</option>
-                        <option value="" class="content_sub_tt">B2B</option>
-                        <option value="" class="content_sub_tt">관계사</option>
-                        <option value="" class="content_sub_tt">기타</option>
-                    </select>
+        <footer class="section main_footer fp-auto-height">
+            <div class="footer_top">
+                <div class="container">
+                    <p class="footer_logo"><a href="index.html"><img src="/image/logo/logo_hover.png" alt="GS건설푸터로고"></a></p>
+                    <ul class="footmenu">
+                        <li><a href="#" class="content_sub_tt">사이버신문고</a></li>
+                        <li><a href="#" class="content_sub_tt">|</a></li>
+                        <li><a href="#" class="content_sub_tt">개인정보처리방침</a></li>
+                        <li><a href="#" class="content_sub_tt">|</a></li>
+                        <li><a href="#" class="content_sub_tt">이메일주소무단수집거부</a></li>
+                        <li><a href="#" class="content_sub_tt">|</a></li>
+                        <li><a href="#" class="content_sub_tt">고객센터</a></li>
+                        <li><a href="#" class="content_sub_tt">|</a></li>
+                        <li><a href="#" class="content_sub_tt">사이트맵</a></li>
+                        <li><a href="#" class="content_sub_tt">|</a></li>
+                        <li><a href="#" class="content_sub_tt">본사(그랑서울) 방문 예약</a></li>
+                    </ul>
+                    <div class="footer_md">
+                        <img src="/image/main/WA_mark.png" alt="wa품질인증마크">
+                        <select name="familysite" id="familysite" >
+                            <option value="" class="content_sub_tt">familysite</option>
+                            <option value="" class="content_sub_tt">Brand</option>
+                            <option value="" class="content_sub_tt">자회사</option>
+                            <option value="" class="content_sub_tt">B2B</option>
+                            <option value="" class="content_sub_tt">관계사</option>
+                            <option value="" class="content_sub_tt">기타</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <p class="content_sub_tt">&copy;GS E&amp;C CORP.</p>
-                <address class="content_sub_tt">03159 서울특별시 종로구 종로33 그랑서울
-                    <em>Copyright &copy; GS E&C Corp. All Rights Reserved</em>
-                </address>
+            <div class="footer_bottom">
+                <div class="container">
+                    <p class="content_sub_tt">&copy;GS E&amp;C CORP.</p>
+                    <address class="content_sub_tt">03159 서울특별시 종로구 종로33 그랑서울
+                        <em>Copyright &copy; GS E&C Corp. All Rights Reserved</em>
+                    </address>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/fullpage.extensions.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
