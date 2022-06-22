@@ -64,7 +64,7 @@
 .map{
     padding-top: calc(var(--line-height)*2);
 }
-.map .map_api{
+#map{
     width: 729px;
     height: 420px;
 }
