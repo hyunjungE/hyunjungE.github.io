@@ -64,6 +64,10 @@
 .map{
     padding-top: calc(var(--line-height)*2);
 }
+#map{
+    width:729px;
+    height:420px;
+}
 .map .container{
     padding: var(--line-height);
     display: flex;
