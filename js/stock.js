@@ -1,5 +1,5 @@
 $( ".stock_accodian" ).accordion({
-  collapsible: true
+  heightStyle: "content"
 });
 
 

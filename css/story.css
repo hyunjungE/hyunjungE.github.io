@@ -65,7 +65,6 @@
     padding-top: calc(var(--line-height)*2);
 }
 .map .map_api{
-    background: url(../image/story/map.png);
     width: 729px;
     height: 420px;
 }

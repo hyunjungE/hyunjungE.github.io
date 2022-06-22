@@ -36,12 +36,15 @@ html,body,footer{
 }
 .counters{
     text-align: center;
+
 }
 .counters .counters_list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:100px;
     padding-top:calc(var(--line-height)*2);
 }
+
 .project {
     padding:105px 0;
 }
@@ -99,7 +102,8 @@ html,body,footer{
 .project .swiper-slide{
     display: flex;
     white-space: nowrap;
-    justify-content: space-between
+    justify-content: center;
+    gap: 250px;
 }
 .project .swiper-slide>div{
     text-align: center;
@@ -120,14 +124,30 @@ html,body,footer{
 .middle_slide,.slide_container {
     height: 947px;
 }
-/* .middle_slide .mdslide>div div{
+.middle_slide .mdslide>div div{
     text-align: center;
-    color: var(--white);
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
-} */
+}
+.middle_slide .mdslide>div div h2{
+    color: var(--white);
+    /* text-shadow: 2px 2px 2px black;  */
+    margin-bottom: var(--line-height);
+    font-size: 25px;
+}
+
+.middle_slide .mdslide>div div span{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--white);
+}
+.middle_slide .mdslide>div div span:hover{
+    background: var(--white);
+    color: #9a9595;
+}
 .pj_controls span{
     margin-left: 50px;
 }
@@ -155,7 +175,6 @@ html,body,footer{
 .mdsldie3{
     background: url(/image/main/banner3.jpg) no-repeat center/cover;
 } 
-
 .brand_content h2{
     text-align: center;
     padding:var(--line-height);
@@ -164,7 +183,7 @@ html,body,footer{
     display: flex;
     justify-content: center;
     white-space: wrap;
-    gap: 250px;
+    gap: 135px;
 }
 
 .brand_content .container .bc_list .bg_wrap>img{
@@ -221,6 +240,7 @@ html,body,footer{
 /*---------------------------*/
 .side_menu{
     padding-top:calc(var(--line-height)*2); 
+    background: url(../image/counter/bg4.png);
 }
 .side_menu .container{
     display: flex;
@@ -273,4 +293,8 @@ html,body,footer{
 }
 .fp-warning, .fp-watermark a{
     display: none;
+}
+.section.active div{
+    animation-name: fadeInUp;
+    animation-delay:0.5s ;
 }

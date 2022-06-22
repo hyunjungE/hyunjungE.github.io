@@ -63,7 +63,6 @@ header:hover::after{
     content: '';
     display: block;
     border: 1px solid #9a9595;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     position: absolute;
     top: 120px;
     left: 0;
