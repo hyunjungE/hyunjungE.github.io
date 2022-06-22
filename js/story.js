@@ -53,3 +53,8 @@ let infowindow = new kakao.maps.InfoWindow({
     content : iwContent,
     removable : iwRemoveable
 });
+function setZoomable(zoomable) {
+    // 마우스 휠로 지도 확대,축소 가능여부를 설정합니다
+    map.setZoomable(zoomable);    
+}
+setZoomable(false); 
