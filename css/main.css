@@ -110,17 +110,6 @@ html,body,footer{
 }
 
 /*----------------------------------------*/
-
-.mdslide > div:after{
-    content:'';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.5);
-    z-index:-1;
-}
 .middle_slide,.slide_container {
     height: 947px;
 }
@@ -175,6 +164,9 @@ html,body,footer{
 .mdsldie3{
     background: url(/image/main/banner3.jpg) no-repeat center/cover;
 } 
+
+
+/*------------------------*/
 .brand_content h2{
     text-align: center;
     padding:var(--line-height);
@@ -239,8 +231,7 @@ html,body,footer{
 
 /*---------------------------*/
 .side_menu{
-    padding-top:calc(var(--line-height)*2); 
-    background: url(../image/counter/bg4.png);
+    background: url(../image/counter/bg4.png)no-repeat;
 }
 .side_menu .container{
     display: flex;
@@ -297,4 +288,8 @@ html,body,footer{
 .section.active div{
     animation-name: fadeInUp;
     animation-delay:0.5s ;
+}
+.main_footer::before{
+    margin-top: 0;
+    border: none;
 }
