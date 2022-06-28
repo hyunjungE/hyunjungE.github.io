@@ -52,13 +52,18 @@ const main_swiper = new Swiper('.slide_container ', {
 
   /*-------------------------------*/
 const pj_swiper = new Swiper('.pj_wrapper', {
-    // Optional parameters
+    slidesPerView: 1, 
     direction: 'horizontal',
     loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     autoplay: {
       delay: 2000,
-    }
-    // If we need pagination
+    },
+
   });
 
   

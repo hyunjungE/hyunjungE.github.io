@@ -55,31 +55,31 @@ html,body,footer{
     transition:left 0.4s ease-out;
 }
 .sprite1 .sprite{
-    background: url(../image/sprite/sprite1.png);
+    background: url(../image/sprite/sprite1.png) no-repeat;
     margin-top: var(--line-height) ;
     width: 238px;
     height: 51px;
 }
 .sprite2 .sprite{
-    background: url(../image/sprite/sprite2.png);
+    background: url(../image/sprite/sprite2.png) no-repeat;
     margin-top: var(--line-height) ;
     width: 238px;
     height: 51px;
 }
 .sprite3 .sprite{
-    background: url(../image/sprite/sprite3.png);
+    background: url(../image/sprite/sprite3.png) no-repeat;
     margin-top: var(--line-height) ;
     width: 238px;
     height: 51px;
 }
 .sprite4 .sprite{
-    background: url(../image/sprite/sprite4.png);
+    background: url(../image/sprite/sprite4.png) no-repeat;
     margin-top: var(--line-height) ;
     width: 238px;
     height: 51px;
 }
 .sprite5 .sprite{
-    background: url(../image/sprite/sprite5.png);
+    background: url(../image/sprite/sprite5.png) no-repeat;
     margin-top: var(--line-height) ;
     width: 238px;
     height: 51px;
@@ -108,7 +108,9 @@ html,body,footer{
 .project .swiper-slide>div{
     text-align: center;
 }
-
+.main_ct{
+    display: none;
+}
 /*----------------------------------------*/
 .middle_slide,.slide_container {
     height: 947px;
@@ -155,14 +157,15 @@ html,body,footer{
 }
 .mdsldie1{
     background: url(/image/main/banner1.jpg) no-repeat center/cover;
-
+    object-fit: cover;
 }
 .mdsldie2{
     background: url(/image/main/banner2.jpg) no-repeat center/cover;
-
+    object-fit: cover;
 }
 .mdsldie3{
     background: url(/image/main/banner3.jpg) no-repeat center/cover;
+    object-fit: cover;
 } 
 
 

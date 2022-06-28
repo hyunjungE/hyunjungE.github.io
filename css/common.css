@@ -54,7 +54,7 @@ body{
     margin:0 auto;
 }
 .content_sub_tt{
-    font-size: var(--body-fz);
+    font-size: 16px;
 }
 .white_cr{
     color: var(--white);
@@ -62,7 +62,6 @@ body{
 header:hover::after{
     content: '';
     display: block;
-    border: 1px solid #9a9595;
     position: absolute;
     top: 120px;
     left: 0;
@@ -77,6 +76,9 @@ header:hover::after{
 }
 .sub_img img{
     padding-top: 20px;
+}
+.category_list{
+    display: none;
 }
 .main_header_top{
     position: absolute;
