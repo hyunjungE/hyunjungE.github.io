@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 var  mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 mapOption = { 
-    center: new kakao.maps.LatLng(37.5706922, 126.9815134), // 지도의 중심좌표
+    center: new kakao.maps.LatLng(37.570769290372255,126.98181158018586), // 지도의 중심좌표
     level: 3 // 지도의 확대 레벨
 };
 
@@ -45,7 +45,7 @@ mapOption = {
 
 var  map = new kakao.maps.Map(mapContainer, mapOption); 
 var  iwContent = '<div style="padding:5px;"><h2>그랑서울</h2></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-    iwPosition = new kakao.maps.LatLng(37.5706922, 126.9815134), //인포윈도우 표시 위치입니다
+    iwPosition = new kakao.maps.LatLng(37.570769290372255,126.98181158018586), //인포윈도우 표시 위치입니다
     iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
 // 인포윈도우를 생성하고 지도에 표시합니다
