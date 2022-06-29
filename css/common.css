@@ -196,7 +196,7 @@ header nav> ul > li:hover ul{
     justify-content: center;
     align-items: center;
 }
-.main_footer .footer_bottom .container{
+.main_footer .footer_bottom{
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -206,7 +206,10 @@ header nav> ul > li:hover ul{
     align-items: center;
     gap: 30px;
 }
-
+.footer_md img{
+    width: 120px;
+    height:80px;
+}
 .sub .sub_banner{
     text-align: center;
     padding-top:258px;
@@ -253,4 +256,7 @@ header nav> ul > li:hover ul{
     content: '';
     clear: both;
     display: block;
+}
+address{
+    white-space: nowrap;
 }

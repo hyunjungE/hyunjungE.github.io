@@ -19,6 +19,7 @@
     .main_header_top .logo{
         display: block;
         margin: 21.5 auto;
+
     }
     header .category_list{
         color: var(--white);
@@ -99,8 +100,24 @@
         width: 320px;
         height: 325px;
     }
-    
-
+    .footmenu{
+        position: absolute;
+        top: 100%;
+    }
+    .main_footer .footer_bottom {
+        padding-top: 27px;
+    }
+    .main_footer .footer_bottom p{
+        margin-left: -28px;
+       
+    }
+    .footer_md img{
+        width: 100px;
+        height:60px;
+    }
+    .footer_logo img{
+        width: 180px;
+    }
 }
 @media (max-width:670px){
 

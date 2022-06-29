@@ -34,6 +34,7 @@
 .stock_title{
     border-bottom:1px solid #9a9595;
 	transition:0.35s;
+    padding: 15px 0;
 }
 .stock_title.ui-state-active .material-symbols-outlined{
     display: none;
@@ -89,16 +90,14 @@
     border-top: 2px solid #000;
     border-bottom: 1px solid #9a9595;
     background: #f2f2f2;
-    padding: 20px;
+    padding: 20px 0;
 }
 .stock_number tbody td{
     border-bottom: 1px solid #9a9595;
     text-align: center;
     padding: 20px;
 }
-.stock_graph .count td{
-    text-align: center;
-}
+
 .stock_table_list table{
     width: 420px;
 }
@@ -110,11 +109,14 @@
 }
 .stock_table_list table tr th{
     background: #f2f2f2;
-    padding: 10px;
+    border-bottom: 1px solid #9a9595;
+    padding: 20px 30px;
+    white-space: nowrap;
 }
 .stock_table_list table tr td{
    text-align: center;
-   padding: 10px;
+   border-bottom: 1px solid #9a9595;
+   padding: 20px 10px;
 }
 .stock_accodian{
     border-top: 2px solid #000;
@@ -122,16 +124,19 @@
 .stock_accodian_list{
     border-bottom: 1px solid #9a9595;
 }
+.stock_accodian_list p{
+    padding: 10px;
+}
 .stock_graph .count td{
     position: relative;
     padding-top: 270px;
+    text-align: center;
 }
 .stock_graph .material-symbols-outlined{
     position: absolute;
     right:140px;
     top: 300px;
 }
-
 #myChart{
     position: absolute;
     top: 55px;
