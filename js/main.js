@@ -45,3 +45,11 @@ let asideBtn = $('.aside_button');
 asideBtn.click(()=>{
     $('body').toggleClass('active');
 }); 
+let asideCategory = $('.aside_category > li');
+
+asideCategory.click(function(){
+    $(this).find('ul').slideToggle();
+    $(this).siblings().find('ul').slideUp();
+    $(this).toggleClass('active');
+    $(this).siblings().removeClass('active');
+});
