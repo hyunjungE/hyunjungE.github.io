@@ -38,3 +38,10 @@ AOS.init({
 //           topHeader.removeClass('sticky');
 //         };
 // });
+
+
+let asideBtn = $('.aside_button');
+
+asideBtn.click(()=>{
+    $('body').toggleClass('active');
+}); 
