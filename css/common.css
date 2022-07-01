@@ -76,6 +76,7 @@ header:hover::after{
 }
 .sub_img img{
     padding-top: 20px;
+    padding-right: -20px;
 }
 .category_list{
     display: none;
@@ -127,32 +128,44 @@ header nav{
 }
 header nav > ul{
     display: flex;
-    gap:65px;
     justify-content: space-between;
+    position: relative;
 }
 header .service_menu{
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: space-between;
 }
 header .mc>ul>li>a{
     color: var(--white);
+    padding: 0 27px;
+}
+header .sub_menu>ul>li>a{
+    padding: 0 27px;
+    /* position: relative; */
+}
+header nav>ul>li ul{
+    position: absolute;
+    padding: 50px 50px 0 0;
+    white-space:nowrap;
+    text-align: center;
+
 }
 header nav> ul > li{
     position: relative;
 }
-header nav>ul>li ul{
-    position: absolute;
-    top: 85px;
-    white-space:nowrap;
-    text-align: center;
+
+ header nav>ul>li:nth-child(3) ul{
+    left: 25px;
+} 
+header nav>ul>li:nth-child(4) ul{
+    left: 30px;
+    padding-right: 80px;
 }
-header nav>ul>li:first-child ul{
-    left: -40px;
-}
-header nav>ul>li:nth-child(2) ul{
-    left: -22px;
-}
+ header nav>ul>li:nth-child(5) ul{
+    left: 25px;
+} 
+
 header nav>ul>li a:hover {
     color: var(--secondary-cr);
 }
@@ -162,7 +175,8 @@ header nav> ul > li::after{
 header nav>ul>li:hover::after{
     position: absolute;
     width: 84px;
-    height: 7px;
+    height: 5px;
+    top: 35px;
     bottom: 0;
     left: 50%;
     transform:translateX(-50%);
