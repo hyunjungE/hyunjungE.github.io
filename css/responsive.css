@@ -100,6 +100,9 @@
         width: 320px;
         height: 325px;
     }
+    .side_menu .stock_img{
+        height: 300px;
+    }
     .footmenu{
         position: absolute;
         top: 100%;
