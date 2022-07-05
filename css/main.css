@@ -147,16 +147,22 @@ html,body,footer{
 .mdslide_btn{
     margin-top: 50px;
     border: 1px solid #fff;
-    text-align: center;
     border-radius: 30px;
+}
+.mdslide_btn a{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mdsldie2 .md_wrapper .mdslide_btn{
+    border: 1px solid #000;
+}
+.mdsldie2 .md_wrapper .mdslide_btn a{
+    color: var(--black);
 }
 .mdslide_btn p{
     padding: 10px;
-}
-.mdslide_btn .material-symbols-outlined{
-    position: absolute;
-    top: 12px;
-    left: 140px;
 }
 .mdsldie2 .md_wrapper{
     position: absolute;
@@ -166,9 +172,9 @@ html,body,footer{
 }
 .mdsldie3 .md_wrapper{
     position: absolute;
-    top: 70%;
-    left: 20%;
-    transform: translate(-20%, -70%);
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
 }
 
 /* .swiper-scrollbar-drag{
