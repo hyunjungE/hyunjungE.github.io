@@ -317,3 +317,110 @@ html,body,footer{
     margin-top: 0;
     border: none;
 }
+/*----------------반응형--------------------*/
+@media (max-width:960px){
+    .counters_wrap img{
+        width: 170px;
+    }
+    .counters .counters_list{
+        gap: 50px;
+    }
+    .project_slide .project img{
+        width: 400px;
+    }
+    .project .swiper-slide{
+        display: block;
+    }
+    .project .swiper-slide h3 {
+        margin-bottom: 0;
+    }
+    .arrow{
+        margin: 25px auto;
+    }
+    .sprite1 .sprite{
+        margin: 0 auto 27px;
+    }
+    .sprite2 .sprite{
+        margin: 0 auto 27px;
+    }
+    .sprite3 .sprite{
+        margin: 0 auto 27px;
+    }
+    .sprite4 .sprite{
+        margin: 0 auto 27px;
+    }
+    .sprite5 .sprite{
+        margin: 0 auto 27px;
+    }
+    .project div img{
+        width: 514px;
+    }
+    .main_ct{
+        display: block;
+    }
+    .brand_content .container .bc_list{
+        gap: 50px;
+    }
+    .brand_content .container .bc_list .bg_wrap{
+        width: 250px;
+        height: 250px;
+    }
+    .brand_content .container .bc_list .bg_wrap > img{
+        width: 250px;
+        height: 250px;
+    }
+    .side_menu .container{
+        display: block;
+        margin-top: 120px;
+    }
+    .small_img_wrap{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    .small_img1{
+        background: url(../image/main/small_1.png) no-repeat;
+        width: 320px;
+        height: 325px;
+    }
+    .small_img2{
+        background: url(../image/main/small_2.png) no-repeat;
+        width: 320px;
+        height: 325px;
+    }
+    .small_img3{
+        background: url(../image/main/small_3.png) no-repeat;
+        width: 320px;
+        height: 325px;
+    }
+    .side_menu .stock_img{
+        margin: 20px 0;
+        height: 300px;
+    }
+}
+@media (max-width:670px){
+    .counters .counters_list{
+        flex-wrap: wrap;
+    }
+    .project_slide .project img{
+        width: 300px;
+    }
+    .brand_content .container .bc_list{
+        gap: 30px;
+    }
+    .brand_content .container .bc_list .bg_wrap{
+        width: 180px;
+        height: 180px;
+    }
+    .brand_content .container .bc_list .bg_wrap > img{
+        width: 180px;
+        height: 180px;
+    }
+    .small_img1,.small_img2,.small_img3{
+        display: none;
+    }
+    .side_menu .stock_img{
+        margin: 20px 35px;
+        width: 435px;
+    }
+}
