@@ -371,7 +371,6 @@ html,body,footer{
     }
     .side_menu .container{
         display: block;
-        margin-top: 120px;
     }
     .small_img_wrap{
         display: flex;
@@ -418,6 +417,13 @@ html,body,footer{
     }
     .small_img1,.small_img2,.small_img3{
         display: none;
+    }
+    .side_menu .container .news li, .side_menu .container .recruit li{
+        padding: 14px 0;
+    }
+    .news, .recruit{
+        margin: 0 35px;
+        width: 435px;
     }
     .side_menu .stock_img{
         margin: 20px 35px;

@@ -299,6 +299,9 @@ address{
     .content_tt{
         font-size: 12px;
     }
+    .content_sub_tt{
+        font-size: 14px;
+    }
     header nav{
         display: none;
     }
