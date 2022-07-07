@@ -280,7 +280,7 @@ address{
     justify-content: center;
     align-items: center;
 }
-.aside{
+aside{
     display: none;
 }
 /*----------------반응형--------------------*/
@@ -325,10 +325,10 @@ address{
     }
     .footmenu{
         position: absolute;
-        top: 100%;
+        bottom: 40px;
     }
     .main_footer .footer_bottom {
-        padding-top: 27px;
+        padding-top: 55px;
     }
     .footer_bottom .container{
         white-space: nowrap;
@@ -438,14 +438,14 @@ address{
         font-weight: bold;
     }
     .main_footer .footer_top .container .footmenu{
-        top: 100%;
+        bottom: 80px;
         white-space: nowrap;
         flex-wrap: wrap;
         justify-content: left;
         align-items:flex-start
     }
     .main_footer .footer_bottom {
-        padding-top: 75px;
+        padding-top: 105px;
     }
     .footer_bottom .container{
         white-space: nowrap;
