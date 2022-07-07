@@ -136,7 +136,10 @@
     border-bottom: 1px solid #9a9595;
 } 
 @media (max-width:960px){
-    
+    .stock{
+        height: 100%;
+        margin-top: 50px;
+    }
     .stock_list .stock_accodian{
         width: 300px;
     }
@@ -152,26 +155,18 @@
     .standard span.second .material-symbols-outlined{
         top: 35px;
     }
-    .stock_number table{
-        width: 490px;
-    }
-    .stock_graph table{
-        width: 490px;
+    .stock_stock_table{
+        display: flex;
+        flex-direction: column;
     }
     canvas{
         height:200px !important;
-      }
+    }
     .stock_graph .count td {
-        padding-top: 200px;
+        padding-top: 180px;
     }
     .stock_graph .material-symbols-outlined {
-        top: 230px;
+        top: 210px;
         left: 20px;
-    }
-    .stock_table_list table{
-        width: 300px;
-        position: absolute;
-        left: -567px;
-        margin-top: 500px;
     }
 }
