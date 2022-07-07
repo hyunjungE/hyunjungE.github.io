@@ -142,3 +142,42 @@
     top: 55px;
     border-bottom: 1px solid #9a9595;
 }
+@media (max-width:960px){
+    
+    .stock_list .stock_accodian{
+        width: 300px;
+    }
+    .standard{
+        left: 320px;
+    }
+    .standard span.third,.standard span.second{
+        padding-left: 150px;
+    }
+    .standard .first .material-symbols-outlined{
+        top: 22px;
+    }
+    .standard span.second .material-symbols-outlined{
+        top: 35px;
+    }
+    .stock_number table{
+        width: 490px;
+    }
+    .stock_graph table{
+        width: 490px;
+    }
+    canvas{
+        height:200px !important;
+      }
+    .stock_graph .count td {
+        padding-top: 200px;
+    }
+    .stock_graph .material-symbols-outlined {
+        top: 230px;
+        left: 20px;
+    }
+    .stock_table_list table{
+        width: 300px;
+        /* position: absolute;
+        top: 40px; */
+    }
+}

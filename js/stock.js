@@ -29,7 +29,8 @@ const labels = [
     options: {
         scales: {
             y: {
-               display:false
+               display:false,
+               heightStyle:30
             },
          x: {
                display:false
