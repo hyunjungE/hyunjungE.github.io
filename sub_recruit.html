@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/aos.css">
@@ -105,81 +106,87 @@
                         <a href="#life" class="btn">여가생활지원</a>
                         <a href="#develeop" class="btn">자기계발</a>
                     </div>  
-                <div class="support_contents " id="all" data-aos="fade-up">
-                    <div class="item" id="family">
-                        <div class="nomal">
-                            <img src="/image/svg/house_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림" >
-                            <h3 class="white_cr content_tt">가족친화</h3>
-                        </div>
-                        <div class="hover">
-                            <p class="white_cr">자녀학자금, 보육지원비, 경조금/휴가,<br/>
-                                배우자 의료비실손보험,<br/> 
-                            사내 어린이집,<br/> 
-                            육아/가족돌봄/난임 휴직</p>
-                            <hr>
-                            <div>
+                <div class=" recruit_list">
+                    <div class="support_contents " id="all" data-aos="fade-up">
+                        <div class="item" id="family">
+                            <div class="nomal">
                                 <img src="/image/svg/house_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림" >
-                                <h3 class="white_cr ">가족친화</h3>
+                                <h3 class="white_cr content_tt">가족친화</h3>
                             </div>
-                        </div>    
-                    </div>
-                    <div class="item" id="housing">
-                        <div class="nomal">
-                            <img src="/image/svg/apartment_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
-                            <h3 class="white_cr">주거생활안정</h3>
+                            <div class="hover">
+                                <p class="white_cr">자녀학자금, 보육지원비, 경조금/휴가,<br/>
+                                    배우자 의료비실손보험,<br/> 
+                                사내 어린이집,<br/> 
+                                육아/가족돌봄/난임 휴직</p>
+                                <hr>
+                                <div>
+                                    <img src="/image/svg/house_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림" >
+                                    <h3 class="white_cr ">가족친화</h3>
+                                </div>
+                            </div>    
                         </div>
-                        <div class="hover">
-                            <p class="white_cr">주택 구입/임차자금 대출,<br/>전임이사비</p>
-                            <hr>
-                            <div>
+                        <div class="item" id="housing">
+                            <div class="nomal">
                                 <img src="/image/svg/apartment_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
                                 <h3 class="white_cr">주거생활안정</h3>
                             </div>
+                            <div class="hover">
+                                <p class="white_cr">주택 구입/임차자금 대출,<br/>전임이사비</p>
+                                <hr>
+                                <div>
+                                    <img src="/image/svg/apartment_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
+                                    <h3 class="white_cr">주거생활안정</h3>
+                                </div>
+                            </div>   
+                        </div>  
+                        <div class="item" id="health">
+                                <div class="nomal">
+                                    <img src="/image/svg/medication_liquid_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
+                                    <h3 class="white_cr">건강관리</h3>
+                                </div>
+                            <div class="hover">
+                                <p class="white_cr">건강검진, 의료비실손보험,<br/>상해보험</p>
+                                <hr>
+                                <div>
+                                    <img src="/image/svg/medication_liquid_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
+                                    <h3 class="white_cr">건강관리</h3>
+                                </div>
+                            </div>   
                         </div>   
-                    </div>  
-                    <div class="item" id="health">
+                        <div class="item" id="life">
                             <div class="nomal">
-                                <img src="/image/svg/medication_liquid_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
-                                <h3 class="white_cr">건강관리</h3>
-                            </div>
-                        <div class="hover">
-                            <p class="white_cr">건강검진, 의료비실손보험,<br/>상해보험</p>
-                            <hr>
-                            <div>
-                                <img src="/image/svg/medication_liquid_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
-                                <h3 class="white_cr">건강관리</h3>
-                            </div>
-                        </div>   
-                    </div>   
-                    <div class="item" id="life">
-                        <div class="nomal">
-                            <img src="/image/svg/flight_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
-                            <h3 class="white_cr">여가생활지원</h3>
-                        </div>
-                        <div class="hover">
-                            <p class="white_cr">휴양시설, 스포츠경기 티켓, <br/>동호회 지원</p>
-                            <hr>
-                            <div>
                                 <img src="/image/svg/flight_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
                                 <h3 class="white_cr">여가생활지원</h3>
                             </div>
-                        </div>    
-                    </div> 
-                    <div class="item" id="develeop">
-                        <div class="nomal">
-                            <img src="/image/svg/construction_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
-                            <h3 class="white_cr">자기계발</h3>
-                        </div>
-                        <div class="hover">
-                            <p class="white_cr">자기계발<br/>(온라인 어학과정 등),<br/>근무복, 현장근무자 통신비 지원</p>
-                            <hr>
-                            <div>
+                            <div class="hover">
+                                <p class="white_cr">휴양시설, 스포츠경기 티켓, <br/>동호회 지원</p>
+                                <hr>
+                                <div>
+                                    <img src="/image/svg/flight_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
+                                    <h3 class="white_cr">여가생활지원</h3>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="item" id="develeop">
+                            <div class="nomal">
                                 <img src="/image/svg/construction_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
                                 <h3 class="white_cr">자기계발</h3>
                             </div>
-                        </div>  
-                    </div>  
-                </div> 
+                            <div class="hover">
+                                <p class="white_cr">자기계발<br/>(온라인 어학과정 등),<br/>근무복, 현장근무자 통신비 지원</p>
+                                <hr>
+                                <div>
+                                    <img src="/image/svg/construction_FILL0_wght400_GRAD0_opsz48.svg" alt="집아이콘그림">
+                                    <h3 class="white_cr">자기계발</h3>
+                                </div>
+                            </div>  
+                        </div> 
+                    </div>
+                    <div class="recruit_controls">
+                        <a href=""><span class="swiper-button-prev sprite prev">prev</a></span>
+                        <a href=""><span class="swiper-button-next sprite next">next</a></span>
+                    </div>
+                </div>
             </div>
         </section>
         <div>
@@ -292,7 +299,9 @@
     </aside>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/recruit.js"></script>
     <script src="js/main.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K55JZDVVJW"></script>

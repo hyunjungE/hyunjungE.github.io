@@ -20,6 +20,7 @@ for(i=1; i<8; i++){
 
 };
 /*--------------------------------------*/
+
 let MultiSwiper = new Swiper(".video_list", {
     slidesPerView: 4,
     spaceBetween: 28.6,
@@ -30,7 +31,8 @@ let MultiSwiper = new Swiper(".video_list", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+});
+
   /*---------------------------- */
 document.addEventListener('DOMContentLoaded', function() {
     

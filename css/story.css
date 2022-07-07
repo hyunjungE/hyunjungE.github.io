@@ -26,7 +26,6 @@
     padding-bottom:calc(var(--line-height)*2) ;
 }
 .controls span{
-    position: absolute;
     top: 350px;
     width: 26px;
     height: 26px;
@@ -92,4 +91,38 @@
 }
 .map .container td{
     padding-bottom:var(--line-height); 
+}
+/*----------------반응형--------------------*/
+@media (max-width:960px){
+    .news .news_list ul li{
+        display: block;
+        text-align: center;
+    }
+    .news .news_list ul li img{
+        width: 450px;
+    }
+    .video_list.swiper {
+        width: 100%;
+    }
+    .video_list.swiper-slide {
+        text-align: center;
+    } 
+    .video_list .swiper-wrapper img{
+        width: 200px;  
+    }
+    .controls{
+        width: 960px;
+    }
+    .controls a{
+        width: 26px;
+        height: 26px;
+    }
+
+
+
+
+
+    .map .container{
+        flex-direction: column-reverse;
+    }
 }

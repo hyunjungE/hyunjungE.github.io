@@ -7,7 +7,6 @@ $('#fullpage').fullpage({
     slidesNavigation: true,
     slidesNavPosition: 'top',
     keyboardScrolling: true,
-    responsiveWidth: 1000,
     afterLoad: function(origin, destination, direction, trigger){
       var origin = this;
   
