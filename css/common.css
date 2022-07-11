@@ -283,11 +283,29 @@ address{
 aside{
     display: none;
 }
+.controls .next{
+    background-position-x: -281px;
+    right: 47%;
+}
+.controls .prev{
+    background-position-x: -245px; 
+    left: 47%;
+}
+.controls .next:hover{
+    background-position-y: 100%;
+}
+.controls .prev:hover{
+    background-position-y: 100%;
+}
 /*----------------반응형--------------------*/
 @media (max-width:960px){
     .container{
         width:809px;
         margin:0 auto;
+    }
+    .sub .sub_banner {
+        text-align: center;
+        padding-top: 248px;
     }
     .main_tt{
         font-size: 25px;
@@ -425,6 +443,10 @@ aside{
     .container{
         width:504px;
         margin:0 auto;
+    }
+    .sub .sub_banner {
+        text-align: center;
+        padding-top: 180px;
     }
     .main_tt{
         font-size: 20px;

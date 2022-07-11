@@ -140,6 +140,12 @@
         height: 100%;
         margin-top: 50px;
     }
+    .stock_banner {
+        height: 600px;
+    }
+    .stock_banner p{
+        padding: 0 80px;
+    }
     .stock_list .stock_accodian{
         width: 300px;
     }
@@ -168,5 +174,16 @@
     .stock_graph .material-symbols-outlined {
         top: 210px;
         left: 20px;
+    }
+}
+@media (max-width:670px){
+    .stock_banner {
+        height: 450px;
+    }
+    .stock_accodian{
+        display: none;
+    }
+    .standard {
+        position: relative;
     }
 }

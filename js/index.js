@@ -24,17 +24,22 @@ $('#fullpage').fullpage({
                     clearInterval(numTimer)
                 }
             },100);
-        });;
+        });
       }
-  
+
+$(window).trigger('resize');
       if(destination.index != 0){
         $('.main_header_top').addClass('sticky');
       }else{
         $('.main_header_top').removeClass('sticky');
       };
   
-    }
-  });
+  }
+});
+
+
+
+/*---------------------------------------------------*/ 
 
 const main_swiper = new Swiper('.slide_container ', {
     // Optional parameters

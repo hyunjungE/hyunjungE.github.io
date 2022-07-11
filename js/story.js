@@ -21,17 +21,49 @@ for(i=1; i<8; i++){
 };
 /*--------------------------------------*/
 
+let oneSwiper = new Swiper(".news_slide", {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: { 
+        640: { 
+            slidesPerView: 2,
+            spaceBetween: 10,
+            slidesPerGroup: 2,
+        },
+      }
+  });
+/*--------------------------------------*/
+
 let MultiSwiper = new Swiper(".video_list", {
-    slidesPerView: 4,
-    spaceBetween: 28.6,
-    slidesPerGroup: 4,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: { 
+        640: { 
+            slidesPerView: 4,
+            spaceBetween: 28.6,
+            slidesPerGroup: 4,
+        },
+    }
 });
+$('.video_list .controls span.next').click(function(){
+    controlSwiper.slideNext();
+  });
+  $('.video_list .controls span.prev').click(function(){
+    controlSwiper.slidePrev();
+  });
 
   /*---------------------------- */
 document.addEventListener('DOMContentLoaded', function() {

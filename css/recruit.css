@@ -100,11 +100,17 @@
 .support_contents :hover .hover{
    top: 50%;
 }
-.recruit_controls{
-    display: none;
-}
+
 
 /* 반응형 */
 @media (max-width:960px){
-       
+    .recruit_banner {
+        height: 600px;
+    }
+}
+@media (max-width:670px){
+    .recruit_banner {
+        height: 450px;
+    }
+    
 }
